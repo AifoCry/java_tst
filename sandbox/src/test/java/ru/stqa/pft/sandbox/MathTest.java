@@ -1,13 +1,15 @@
 package ru.stqa.pft.sandbox;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class MathTest {
 
     @Test
     public void testArea() {
-        Point P3 = new Point(10,20);
-        Point P4 = new Point(30,40);
+        Point p3 = new Point(2,5);
+        Point p4 = new Point(4,10);
+        Assert.assertEquals( p3.distance(p4),  5.385164807134504);
 
     }
 }
