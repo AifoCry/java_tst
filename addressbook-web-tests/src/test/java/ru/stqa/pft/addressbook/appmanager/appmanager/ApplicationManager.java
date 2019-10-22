@@ -1,8 +1,6 @@
 package ru.stqa.pft.addressbook.appmanager.appmanager;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.NoAlertPresentException;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import ru.stqa.pft.addressbook.appmanager.model.ContactData;
@@ -21,34 +19,17 @@ public class ApplicationManager {
         wd.get("http://localhost/addressbook/group.php");
         navigationHelper = new NavigationHelper(wd);
         groupHelper = new GroupHelper(wd);
-        sessionHelper =new SessionHelper(wd);
+        sessionHelper = new SessionHelper(wd);
         sessionHelper.login("admin", "secret");
 
     }
 
 
     public void stop() {
-        wd.findElement(By.linkText("Logout")).click();
-       wd.quit();
+        sessionHelper.logout();
+        wd.quit();
     }
 
-    public boolean isElementPresent(By by) {
-        try {
-            wd.findElement(by);
-            return true;
-        } catch (NoSuchElementException e) {
-            return false;
-        }
-    }
-
-    public boolean isAlertPresent() {
-        try {
-            wd.switchTo().alert();
-            return true;
-        } catch (NoAlertPresentException e) {
-            return false;
-        }
-    }
 
     public void gotoCreateContact() {
         wd.findElement(By.linkText("add new")).click();
