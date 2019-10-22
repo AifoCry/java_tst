@@ -12,6 +12,7 @@ public class ApplicationManager {
     private SessionHelper sessionHelper;
     private NavigationHelper navigationHelper;
     private GroupHelper groupHelper;
+    private ContactHelper contactHelper;
 
     public void init() {
         wd = new FirefoxDriver();
@@ -19,6 +20,7 @@ public class ApplicationManager {
         wd.get("http://localhost/addressbook/group.php");
         navigationHelper = new NavigationHelper(wd);
         groupHelper = new GroupHelper(wd);
+        contactHelper = new ContactHelper(wd);
         sessionHelper = new SessionHelper(wd);
         sessionHelper.login("admin", "secret");
 
@@ -30,28 +32,8 @@ public class ApplicationManager {
         wd.quit();
     }
 
-
-    public void gotoCreateContact() {
-        wd.findElement(By.linkText("add new")).click();
-    }
-
-    public void fillContactForm(ContactData contactData) {
-        wd.findElement(By.name("firstname")).click();
-        wd.findElement(By.name("firstname")).clear();
-        wd.findElement(By.name("firstname")).sendKeys(contactData.getName());
-        wd.findElement(By.name("middlename")).click();
-        wd.findElement(By.name("middlename")).clear();
-        wd.findElement(By.name("middlename")).sendKeys(contactData.getSurname());
-        wd.findElement(By.name("mobile")).click();
-        wd.findElement(By.name("mobile")).clear();
-        wd.findElement(By.name("mobile")).sendKeys(contactData.getPhone());
-        wd.findElement(By.name("email")).click();
-        wd.findElement(By.name("email")).clear();
-        wd.findElement(By.name("email")).sendKeys(contactData.getMail());
-    }
-
-    public void submitNewContact() {
-        wd.findElement(By.xpath("(//input[@name='submit'])[2]")).click();
+    public ContactHelper getContactHelper() {
+        return contactHelper;
     }
 
     public GroupHelper getGroupHelper() {
