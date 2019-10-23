@@ -20,4 +20,10 @@ public class ContactHelper extends HelperBase{
     public void submitNewContact() {
         click(By.xpath("(//input[@name='submit'])[2]"));
     }
+    public void selectContact() {
+        click(By.name("selected[]"));
+    }
+    public  void deleteSelectContact() {
+        click(By.xpath("//input[@value='Delete']"));
+    }
 }
