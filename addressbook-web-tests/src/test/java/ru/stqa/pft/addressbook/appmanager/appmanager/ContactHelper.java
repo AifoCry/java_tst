@@ -12,7 +12,7 @@ public class ContactHelper extends HelperBase{
 
     public void fillContactForm(ContactData contactData) {
         type(By.name("firstname"),contactData.getName());
-        type(By.name("middlename"),contactData.getSurname());
+        type(By.name("lastname"),contactData.getSurname());
         type(By.name("mobile"),contactData.getPhone());
         type(By.name("email"),contactData.getMail());
 

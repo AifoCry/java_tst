@@ -1,0 +1,17 @@
+package ru.stqa.pft.addressbook.appmanager.tests;
+
+import org.testng.annotations.Test;
+import ru.stqa.pft.addressbook.appmanager.model.GroupData;
+
+public class GroupModificationTests extends TestBase {
+
+    @Test
+    public void testGroupModification() throws Exception {
+        app.getNavigationHelper().gotoGroupPage();
+        app.getGroupHelper().selectGroup();
+        app.getGroupHelper().updateSelectGroup();
+        app.getGroupHelper().fillGroupForm(new GroupData("test1", "test2", "test3"));
+        app.getGroupHelper().submitUpdateGroup();
+        app.getGroupHelper().returnToGroupPage();
+    }
+}
