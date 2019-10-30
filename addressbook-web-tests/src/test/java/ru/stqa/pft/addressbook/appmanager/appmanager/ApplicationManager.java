@@ -27,7 +27,7 @@ public class ApplicationManager {
         } else if (browser.equals(BrowserType.IE)){
             wd = new InternetExplorerDriver();
         }
-        wd.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        wd.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
         wd.get("http://localhost/addressbook/group.php");
         navigationHelper = new NavigationHelper(wd);
         groupHelper = new GroupHelper(wd);
