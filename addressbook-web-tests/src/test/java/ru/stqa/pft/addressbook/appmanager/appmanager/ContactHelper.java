@@ -1,10 +1,10 @@
 package ru.stqa.pft.addressbook.appmanager.appmanager;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import ru.stqa.pft.addressbook.appmanager.model.ContactData;
+import ru.stqa.pft.addressbook.appmanager.model.GroupData;
 
 public class ContactHelper extends HelperBase {
 
@@ -44,13 +44,23 @@ public class ContactHelper extends HelperBase {
     public void submitEditContact() {
         click(By.name("update"));
     }
+
     public boolean isThereAContact() {
         return isElementPresent(By.name("selected[]"));
     }
 
+    public boolean isThereAGroupContact() {
+        new Select(wd.findElement(By.name("new_group"))).selectByVisibleText("test1");
+        return true;
+    }
+
     public void createContact(ContactData contact, boolean b) {
         app.getNavigationHelper().gotoCreateContact();
-        fillContactForm  (contact,b);
+        if (!isThereAGroupContact()) { //должно работать в случае отсутсвия группы test1, но не работает
+        app.getGroupHelper().createGroup(new GroupData("test1", null, null));
+        app.getNavigationHelper().gotoCreateContact();
+        }
+        fillContactForm(contact, b);
         submitNewContact();
         app.getNavigationHelper().gotoHomePage();
     }
