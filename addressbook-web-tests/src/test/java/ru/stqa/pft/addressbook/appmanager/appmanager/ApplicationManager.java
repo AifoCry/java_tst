@@ -29,11 +29,11 @@ public class ApplicationManager {
         }
         wd.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
         wd.get("http://localhost/addressbook/group.php");
-        navigationHelper = new NavigationHelper(wd);
-        groupHelper = new GroupHelper(wd);
-        contactHelper = new ContactHelper(wd);
-        sessionHelper = new SessionHelper(wd);
+        sessionHelper = new SessionHelper((ApplicationManager) wd);
         sessionHelper.login("admin", "secret");
+        navigationHelper = new NavigationHelper((ApplicationManager) wd);
+        groupHelper = new GroupHelper((ApplicationManager) wd);
+        contactHelper = new ContactHelper((ApplicationManager) wd);
 
     }
 

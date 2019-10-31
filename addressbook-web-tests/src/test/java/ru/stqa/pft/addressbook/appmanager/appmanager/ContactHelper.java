@@ -8,8 +8,8 @@ import ru.stqa.pft.addressbook.appmanager.model.ContactData;
 
 public class ContactHelper extends HelperBase {
 
-    public ContactHelper(WebDriver wd) {
-        super(wd);
+    public ContactHelper(ApplicationManager app) {
+        super(app);
     }
 
     public void fillContactForm(ContactData contactData, boolean creation) {
@@ -43,5 +43,15 @@ public class ContactHelper extends HelperBase {
 
     public void submitEditContact() {
         click(By.name("update"));
+    }
+    public boolean isThereAContact() {
+        return isElementPresent(By.name("selected[]"));
+    }
+
+    public void createContact(ContactData contact, boolean b) {
+        app.getNavigationHelper().gotoCreateContact();
+        fillContactForm  (contact,b);
+        submitNewContact();
+        app.getNavigationHelper().gotoHomePage();
     }
 }

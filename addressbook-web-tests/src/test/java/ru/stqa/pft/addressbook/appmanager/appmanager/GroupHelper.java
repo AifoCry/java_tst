@@ -1,13 +1,13 @@
 package ru.stqa.pft.addressbook.appmanager.appmanager;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import ru.stqa.pft.addressbook.appmanager.model.GroupData;
 
 public class GroupHelper extends HelperBase {
 
-    public GroupHelper(WebDriver wd) {
-        super(wd);
+
+    public GroupHelper (ApplicationManager app) {
+        super(app);
     }
 
     public void returnToGroupPage() {
