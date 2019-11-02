@@ -155,7 +155,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.GroupModificationTests">
+  <component name="RunManager" selected="Gradle.GroupDeletionTests">
     <configuration name="Collections" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.sandbox.Collections" />
       <module name="sandbox.test" />
@@ -248,8 +248,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.GroupModificationTests" />
         <item itemvalue="Gradle.GroupDeletionTests" />
+        <item itemvalue="Gradle.GroupModificationTests" />
         <item itemvalue="Gradle.GroupCreationTests" />
         <item itemvalue="Application.Collections" />
         <item itemvalue="TestNG.PrimeTest" />
