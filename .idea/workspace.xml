@@ -249,8 +249,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.GroupCreationTests" />
-        <item itemvalue="Gradle.GroupDeletionTests" />
         <item itemvalue="Gradle.GroupModificationTests" />
+        <item itemvalue="Gradle.GroupDeletionTests" />
         <item itemvalue="Application.Collections" />
         <item itemvalue="TestNG.PrimeTest" />
       </list>
