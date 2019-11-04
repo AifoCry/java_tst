@@ -64,4 +64,8 @@ public class ContactHelper extends HelperBase {
         submitNewContact();
         app.getNavigationHelper().gotoHomePage();
     }
+
+    public int getContactCount() {
+        return wd.findElements(By.name("entry")).size();
+    }
 }
