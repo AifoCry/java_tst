@@ -10,6 +10,7 @@ import ru.stqa.pft.addressbook.appmanager.model.GroupData;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class ContactHelper extends HelperBase {
 
     public ContactHelper(ApplicationManager app) {
@@ -81,7 +82,8 @@ public class ContactHelper extends HelperBase {
         for (WebElement cell : cells) {
             String name = cell.findElement(By.xpath(".//td[3]")).getText();
             String surname = cell.findElement(By.xpath(".//td[2]")).getText();
-            ContactData contact = new ContactData(name, surname, null, null, null);
+            String id = cell.findElement(By.name("selected[]")).getAttribute("value");
+            ContactData contact = new ContactData(id, name, surname, null, null, null);
             contacts.add(contact);
 ;        }
         return contacts;
