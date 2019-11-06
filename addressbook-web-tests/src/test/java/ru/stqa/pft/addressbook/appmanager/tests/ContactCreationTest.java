@@ -15,11 +15,22 @@ public class ContactCreationTest extends TestBase {
         app.getNavigationHelper().gotoHomePage();
         //int before = app.getContactHelper().getContactCount();
         List<ContactData> before = app.getContactHelper().getContactList();
-        app.getContactHelper().createContact(new ContactData(null,"Alexandr", "Eliseev", "+79167777777", "alex@yandex.ru", "test1"), true);
+        ContactData contact = new ContactData("Alexandr", "Eliseev", "+79167777777", "alex@yandex.ru", "test1");
+        app.getContactHelper().createContact((contact), true);
         //int after = app.getContactHelper().getContactCount();
         List<ContactData> after = app.getContactHelper().getContactList();
         //Assert.assertEquals(after,before +1);
         Assert.assertEquals(after.size(),before.size() +1);
+
+        int max = 0;
+        for (ContactData g : after) {
+            if (g.getId() > max) {
+                max =g.getId();
+            }
+        }
+        contact.setId(max);
+        before.add(contact);
+        Assert.assertEquals(before,after);
     }
 
 }
