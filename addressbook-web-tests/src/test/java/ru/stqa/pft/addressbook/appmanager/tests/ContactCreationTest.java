@@ -10,10 +10,19 @@ import java.util.List;
 
 public class ContactCreationTest extends TestBase {
 
+    @BeforeMethod
+    public void ensurePreconditions() {
+        app.getNavigationHelper().gotoGroupPage();
+        app.getNavigationHelper().gotoCreateContact();
+        if (!app.getContactHelper().isThereAGroupContact()) { //должно работать в случае отсутсвия группы test1, но не работает
+            app.getGroupHelper().createGroup(new GroupData("test1", null, null));
+        }
+        app.getNavigationHelper().gotoHomePage();
+    }
+
 
     @Test
     public void testContactCreation() throws Exception {
-        app.getNavigationHelper().gotoHomePage();
         //int before = app.getContactHelper().getContactCount();
         List<ContactData> before = app.getContactHelper().getContactList();
         ContactData contact = new ContactData("Alexandr", "Eliseev", "+79167777777", "alex@yandex.ru", "test1");

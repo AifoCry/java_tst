@@ -63,12 +63,15 @@ public class ContactHelper extends HelperBase {
 
     public void createContact(ContactData contact, boolean b) {
         app.getNavigationHelper().gotoCreateContact();
-        if (!isThereAGroupContact()) { //должно работать в случае отсутсвия группы test1, но не работает
-        app.getGroupHelper().createGroup(new GroupData("test1", null, null));
-        app.getNavigationHelper().gotoCreateContact();
-        }
         fillContactForm(contact, b);
         submitNewContact();
+        app.getNavigationHelper().gotoHomePage();
+    }
+
+    public void deleteContact(int index) {
+        selectContact(index);
+        deleteSelectContact();
+        isAlertPresent();
         app.getNavigationHelper().gotoHomePage();
     }
 
