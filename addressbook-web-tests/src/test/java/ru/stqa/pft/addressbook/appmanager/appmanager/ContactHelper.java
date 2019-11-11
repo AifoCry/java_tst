@@ -5,7 +5,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import ru.stqa.pft.addressbook.appmanager.model.ContactData;
-import ru.stqa.pft.addressbook.appmanager.model.GroupData;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -43,9 +42,16 @@ public class ContactHelper extends HelperBase {
         click(By.xpath("//input[@value='Delete']"));
     }
 
-    public void editContact(int index) {
+    public void edit(int index) {
         wd.findElements(By.xpath("//img[@alt='Edit']")).get(index).click();
         //click(By.xpath("//img[@alt='Edit']"));
+    }
+
+    public void modify(int index, ContactData contact) {
+        edit(index);
+        fillContactForm((contact),false);
+        submitEditContact();
+        app.goTo().homePage();
     }
 
     public void submitEditContact() {
@@ -56,30 +62,29 @@ public class ContactHelper extends HelperBase {
         return isElementPresent(By.name("selected[]"));
     }
 
-    public boolean isThereAGroupContact() {
-        new Select(wd.findElement(By.name("new_group"))).selectByVisibleText("test1");
-        return true;
-    }
+    //public boolean isThereAGroupContact() {
+       // new Select(wd.findElement(By.name("new_group"))).selectByVisibleText("test1");
+     //   return true;
 
-    public void createContact(ContactData contact, boolean b) {
-        app.getNavigationHelper().gotoCreateContact();
+    public void create(ContactData contact, boolean b) {
+        app.goTo().createContact();
         fillContactForm(contact, b);
         submitNewContact();
-        app.getNavigationHelper().gotoHomePage();
+        app.goTo().homePage();
     }
 
-    public void deleteContact(int index) {
+    public void delete(int index) {
         selectContact(index);
         deleteSelectContact();
         isAlertPresent();
-        app.getNavigationHelper().gotoHomePage();
+        app.goTo().homePage();
     }
 
     public int getContactCount() {
         return wd.findElements(By.name("entry")).size();
     }
 
-    public List<ContactData> getContactList() {
+    public List<ContactData> list() {
         List<ContactData> contacts = new ArrayList<ContactData>();
         List<WebElement> cells = wd.findElements(By.name("entry"));
         for (WebElement cell : cells) {

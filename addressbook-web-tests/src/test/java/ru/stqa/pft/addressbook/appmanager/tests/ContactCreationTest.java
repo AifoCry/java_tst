@@ -12,23 +12,21 @@ public class ContactCreationTest extends TestBase {
 
     @BeforeMethod
     public void ensurePreconditions() {
-        app.getNavigationHelper().gotoGroupPage();
-        app.getNavigationHelper().gotoCreateContact();
-        if (!app.getContactHelper().isThereAGroupContact()) { //должно работать в случае отсутсвия группы test1, но не работает
-            app.getGroupHelper().createGroup(new GroupData("test1", null, null));
+        app.goTo().groupPage();
+        if (app.group().list().size() == 0) {
+            app.group().create(new GroupData("test1", null, null));
         }
-        app.getNavigationHelper().gotoHomePage();
+        app.goTo().homePage();
     }
-
 
     @Test
     public void testContactCreation() throws Exception {
         //int before = app.getContactHelper().getContactCount();
-        List<ContactData> before = app.getContactHelper().getContactList();
+        List<ContactData> before = app.contact().list();
         ContactData contact = new ContactData("Alexandr", "Eliseev", "+79167777777", "alex@yandex.ru", "test1");
-        app.getContactHelper().createContact((contact), true);
+        app.contact().create((contact), true);
         //int after = app.getContactHelper().getContactCount();
-        List<ContactData> after = app.getContactHelper().getContactList();
+        List<ContactData> after = app.contact().list();
         //Assert.assertEquals(after,before +1);
         Assert.assertEquals(after.size(),before.size() +1);
 
