@@ -14,7 +14,7 @@ public class GroupModificationTests extends TestBase {
     public void ensurePreconditions() {
         app.goTo().groupPage();
         if (app.group().list().size() == 0) {
-            app.group().create(new GroupData("test1", null, null));
+            app.group().create(new GroupData().WithName("test1"));
         }
     }
 
@@ -22,7 +22,8 @@ public class GroupModificationTests extends TestBase {
     public void testGroupModification() throws Exception {
         List<GroupData> before = app.group().list();
         int index = before.size() - 1;
-        GroupData group = new GroupData(before.get(index).getId(),"test1", "test2", "test3");
+        GroupData group = new GroupData()
+                .WithId(before.get(index).getId()).WithName("test1").WithFooter("test2").WithHeader("test3");
         //int before = app.getGroupHelper().getGroupCount();
         app.group().modify(index, group);
         List<GroupData> after = app.group().list();

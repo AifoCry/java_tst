@@ -3,15 +3,42 @@ package ru.stqa.pft.addressbook.appmanager.model;
 import java.util.Objects;
 
 public class ContactData {
-    public void setId(int id) {
+
+    public ContactData withId(int id) {
         this.id = id;
+        return this;
     }
 
-    private  int id;
-    private final String name;
-    private final String surname;
-    private final String phone;
-    private final String mail;
+    public ContactData withName(String name) {
+        this.name = name;
+        return this;
+    }
+
+    public ContactData withSurname(String surname) {
+        this.surname = surname;
+        return this;
+    }
+
+    public ContactData withPhone(String phone) {
+        this.phone = phone;
+        return this;
+    }
+
+    public ContactData withMail(String mail) {
+        this.mail = mail;
+        return this;
+    }
+
+    public ContactData withGroup(String group) {
+        this.group = group;
+        return this;
+    }
+
+    private  int id = Integer.MAX_VALUE;
+    private String name;
+    private String surname;
+    private String phone;
+    private String mail;
     private String group;
 
     @Override
@@ -41,6 +68,7 @@ public class ContactData {
         return Objects.hash(name, surname);
     }
 
+    /* Старый конструктор
     public ContactData(int id, String name, String surname, String phone, String mail, String group) {
         this.id = id;
         this.name = name;
@@ -58,6 +86,7 @@ public class ContactData {
         this.mail = mail;
         this.group = group;
     }
+    */
 
     public String getName() {
         return name;

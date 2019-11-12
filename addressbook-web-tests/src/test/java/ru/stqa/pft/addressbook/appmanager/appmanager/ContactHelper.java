@@ -91,8 +91,7 @@ public class ContactHelper extends HelperBase {
             String name = cell.findElement(By.xpath(".//td[3]")).getText();
             String surname = cell.findElement(By.xpath(".//td[2]")).getText();
             int id = Integer.parseInt(cell.findElement(By.name("selected[]")).getAttribute("value"));
-            ContactData contact = new ContactData(id, name, surname, null, null, null);
-            contacts.add(contact);
+            contacts.add(new ContactData().withId(id).withName(name).withSurname(surname));
 ;        }
         return contacts;
     }

@@ -3,22 +3,38 @@ package ru.stqa.pft.addressbook.appmanager.model;
 import java.util.Objects;
 
 public class GroupData {
-    public void setId(int id) {
+
+    private  int id = Integer.MAX_VALUE;
+    private String name;
+    private String header;
+    private String footer;
+
+    public GroupData WithId(int id) {
         this.id = id;
+        return this;
     }
 
-    private  int id;
-    private final String name;
-    private final String header;
-    private final String footer;
+    public GroupData WithName(String name) {
+        this.name = name;
+        return this;
+    }
 
+    public GroupData WithHeader(String header) {
+        this.header = header;
+        return this;
+    }
 
+    public GroupData WithFooter(String footer) {
+        this.footer = footer;
+        return this;
+    }
 
     public int getId() {
         return id;
     }
 
 
+    /* Старый конструктор
     public GroupData(String name, String header, String footer) {
         this.id = Integer.MAX_VALUE;
         this.name = name;
@@ -31,6 +47,8 @@ public class GroupData {
         this.header = header;
         this.footer = footer;
     }
+
+     */
 
     @Override
     public boolean equals(Object o) {
