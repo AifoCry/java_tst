@@ -7,7 +7,9 @@ import org.testng.Assert;
 import ru.stqa.pft.addressbook.appmanager.model.ContactData;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 
 public class ContactHelper extends HelperBase {
@@ -38,6 +40,10 @@ public class ContactHelper extends HelperBase {
         //click(By.name("selected[]"));
     }
 
+    public void selectContactByID(int id) {
+        wd.findElement(By.cssSelector("input[id='" + id + "']")).click();
+    }
+
     public void deleteSelectContact() {
         click(By.xpath("//input[@value='Delete']"));
     }
@@ -47,8 +53,15 @@ public class ContactHelper extends HelperBase {
         //click(By.xpath("//img[@alt='Edit']"));
     }
 
-    public void modify(int index, ContactData contact) {
-        edit(index);
+    public void editByIcon(int id) {
+        wd.findElement(By.cssSelector("a[href='edit.php?id=" + id + "']")).click();
+        //wd.findElement(By.xpath("//img[@alt='Edit']")).click();
+        //click(By.xpath("//img[@alt='Edit']"));
+
+    }
+
+    public void modify(ContactData contact) {
+        editByIcon(contact.getId());
         fillContactForm((contact),false);
         submitEditContact();
         app.goTo().homePage();
@@ -80,6 +93,13 @@ public class ContactHelper extends HelperBase {
         app.goTo().homePage();
     }
 
+    public void delete(ContactData contact) {
+        selectContactByID(contact.getId());
+        deleteSelectContact();
+        isAlertPresent();
+        app.goTo().homePage();
+    }
+
     public int getContactCount() {
         return wd.findElements(By.name("entry")).size();
     }
@@ -95,4 +115,18 @@ public class ContactHelper extends HelperBase {
 ;        }
         return contacts;
     }
+
+    public Set<ContactData> all() {
+        Set<ContactData> contacts = new HashSet<ContactData>();
+        List<WebElement> cells = wd.findElements(By.name("entry"));
+        for (WebElement cell : cells) {
+            String name = cell.findElement(By.xpath(".//td[3]")).getText();
+            String surname = cell.findElement(By.xpath(".//td[2]")).getText();
+            int id = Integer.parseInt(cell.findElement(By.name("selected[]")).getAttribute("value"));
+            contacts.add(new ContactData().withId(id).withName(name).withSurname(surname));
+            ;        }
+        return contacts;
+    }
+
+
 }

@@ -89,11 +89,6 @@ public class GroupHelper extends HelperBase {
         }
         return groups;
     }
-    public void delete(int index) {
-        selectGroup(index);
-        deleteSelectGroup();
-        returnToGroupPage();
-    }
 
     public void delete(GroupData group) {
         selectGroupById(group.getId());
