@@ -31,21 +31,9 @@ public class GroupModificationTests extends TestBase {
         // int index = before.size() - 1;
         GroupData group = new GroupData()
                 .WithId(modifiedGroup.getId()).WithName("test1").WithFooter("test2").WithHeader("test3");
-        //int before = app.getGroupHelper().getGroupCount();
         app.group().modify(group);
+        assertThat(app.group().count(),equalTo(before.size()));
         Groups after = app.group().all();
-       // int after = app.getGroupHelper().getGroupCount();
-       // Assert.assertEquals(after,before );
-        assertEquals(after.size(),before.size() );
-
-        //before.remove(modifiedGroup);
-        //before.add(group);
-        /* Сортировка
-        Comparator<? super GroupData> byId = (g1, g2) -> Integer.compare(g1.getId(), g2.getId());
-        before.sort(byId);
-        after.sort(byId);
-        */
-        //assertEquals(before,after);
         assertThat(after, equalTo(before.without(modifiedGroup).withAdded(group)));
 
 

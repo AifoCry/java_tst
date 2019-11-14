@@ -29,17 +29,10 @@ public class GroupDeletionTests extends TestBase {
   public void testGroupDeletion() throws Exception {
     Groups before = app.group().all();
     GroupData deletedGroup = before.iterator().next();
-    //int index = before.size()-1;
-    //int before = app.getGroupHelper().getGroupCount();
     app.group().delete(deletedGroup);
+    assertThat(app.group().count(),equalTo(before.size() - 1));
     Groups after = app.group().all();
-   // int after = app.getGroupHelper().getGroupCount();
-    //Assert.assertEquals(after,before - 1 );
-    assertEquals(after.size(),before.size() - 1 );
-
-    //before.remove(deletedGroup);
     assertThat(after, equalTo(before.without(deletedGroup)));
-    //Assert.assertEquals(before,after);
 
   }
 

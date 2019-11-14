@@ -155,7 +155,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.GroupModificationTests">
+  <component name="RunManager" selected="Gradle.GroupCreationTests">
     <configuration name="ContactModificationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -258,9 +258,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.GroupCreationTests" />
         <item itemvalue="Gradle.GroupModificationTests" />
         <item itemvalue="Gradle.GroupDeletionTests" />
-        <item itemvalue="Gradle.GroupCreationTests" />
         <item itemvalue="Gradle.Tests in 'ru.stqa.pft.addressbook.appmanager.tests'" />
         <item itemvalue="Gradle.ContactModificationTests" />
       </list>
