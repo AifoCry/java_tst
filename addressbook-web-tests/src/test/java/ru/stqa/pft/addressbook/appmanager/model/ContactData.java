@@ -43,6 +43,11 @@ public class ContactData {
         this.group = group;
         return this;
     }
+    public ContactData withAllPhones(String allPhones) {
+        AllPhones = allPhones;
+        return this;
+    }
+
 
     private  int id = Integer.MAX_VALUE;
     private String name;
@@ -52,6 +57,10 @@ public class ContactData {
     private String workPhone;
     private String mail;
     private String group;
+    private String AllPhones;
+
+
+
 
     @Override
     public String toString() {
@@ -130,4 +139,8 @@ public class ContactData {
     public String getHomePhone() {
         return homePhone;
     }
+    public String getAllPhones() {
+        return AllPhones;
+    }
+
 }
