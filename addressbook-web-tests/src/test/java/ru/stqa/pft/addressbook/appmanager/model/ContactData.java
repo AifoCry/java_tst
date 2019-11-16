@@ -63,6 +63,11 @@ public class ContactData {
         return this;
     }
 
+    public ContactData withAddress(String address) {
+        this.address = address;
+        return this;
+    }
+
 
     private  int id = Integer.MAX_VALUE;
     private String name;
@@ -76,6 +81,7 @@ public class ContactData {
     private String group;
     private String allPhones;
     private String allMails;
+    private String address;
 
 
 
@@ -169,6 +175,9 @@ public class ContactData {
     }
     public String getMail3() {
         return mail3;
+    }
+    public String getAddress() {
+        return address;
     }
 
 }
