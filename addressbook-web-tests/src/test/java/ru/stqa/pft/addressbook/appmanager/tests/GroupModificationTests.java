@@ -28,7 +28,6 @@ public class GroupModificationTests extends TestBase {
     public void testGroupModification() throws Exception {
         Groups before = app.group().all();
         GroupData modifiedGroup = before.iterator().next();
-        // int index = before.size() - 1;
         GroupData group = new GroupData()
                 .WithId(modifiedGroup.getId()).WithName("test1").WithFooter("test2").WithHeader("test3");
         app.group().modify(group);
