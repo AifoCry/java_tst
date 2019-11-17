@@ -155,7 +155,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.ContactAddressTest">
+  <component name="RunManager" selected="Gradle.ContactCreationTest">
     <configuration name="ContactAddressTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -258,10 +258,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ContactCreationTest" />
         <item itemvalue="Gradle.ContactAddressTest" />
         <item itemvalue="Gradle.ContactMailTests" />
         <item itemvalue="Gradle.ContactPhoneTests" />
-        <item itemvalue="Gradle.ContactCreationTest" />
         <item itemvalue="Gradle.ContactModificationTests" />
       </list>
     </recent_temporary>
@@ -311,9 +311,17 @@
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/appmanager/ContactHelper.java</url>
-          <line>145</line>
-          <option name="timeStamp" value="20" />
+          <url>file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/tests/ContactCreationTest.java</url>
+          <line>35</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/tests/ContactCreationTest.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -324,6 +332,8 @@
         <watch expression="after" />
         <watch expression="contact.AllMails" />
         <watch expression="contact" />
+        <watch expression="before.toArray()[1]" />
+        <watch expression="after.toArray()[3]" />
       </configuration>
     </watches-manager>
   </component>

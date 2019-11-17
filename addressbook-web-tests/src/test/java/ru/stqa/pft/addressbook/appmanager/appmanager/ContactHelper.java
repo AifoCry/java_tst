@@ -22,6 +22,7 @@ public class ContactHelper extends HelperBase {
         type(By.name("lastname"), contactData.getSurname());
         type(By.name("mobile"), contactData.getMobilePhone());
         type(By.name("email"), contactData.getMail1());
+        attach(By.name("photo"), contactData.getPhoto());
         if (creation) {
             new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroup());
         } else {
@@ -133,7 +134,7 @@ public class ContactHelper extends HelperBase {
         for (WebElement row : rows) {
             List <WebElement> cells = row.findElements(By.tagName("td"));
             int id = Integer.parseInt(cells.get(0).findElement(By.tagName("input")).getAttribute("value"));
-            String name = cells.get(1).getText();
+            String name = cells.get(2).getText();
             String surname = cells.get(1).getText();
             String  allPhones = cells.get(5).getText();
             String  allMails = cells.get(4).getText();
