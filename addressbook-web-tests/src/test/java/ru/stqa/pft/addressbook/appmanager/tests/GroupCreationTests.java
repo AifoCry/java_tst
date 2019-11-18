@@ -5,24 +5,38 @@ import org.testng.annotations.*;
 import ru.stqa.pft.addressbook.appmanager.model.GroupData;
 import ru.stqa.pft.addressbook.appmanager.model.Groups;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 public class GroupCreationTests extends TestBase {
 
-    @Test
-    public void testGroupCreation() throws Exception {
-        app.goTo().groupPage();
-        Groups before = app.group().all();
-        GroupData group = new GroupData().WithName("test2");
-        app.group().create(group);
-        assertThat(app.group().count(),equalTo(before.size() + 1));
-        Groups after = app.group().all();
-        assertThat(after, equalTo(
-                before.withAdded( group.WithId(after.stream().mapToInt((g) -> g.getId()).max().getAsInt()))));
+    @DataProvider
+    public Iterator<Object[]> validGroups() {
+        List<Object[]> list = new ArrayList<Object[]>();
+        list.add(new Object[]{new GroupData().WithName("test1").WithHeader("header 1").WithFooter("footer 1")});
+        list.add(new Object[]{new GroupData().WithName("test2").WithHeader("header 2").WithFooter("footer 2")});
+        list.add(new Object[]{new GroupData().WithName("test3").WithHeader("header 3").WithFooter("footer 3")});
+        return list.iterator();
     }
 
-    @Test
+    @Test(dataProvider = "validGroups")
+    public void testGroupCreation(GroupData group) throws Exception {
+        //GroupData group = new GroupData().WithName(name).WithHeader(header).WithFooter(footer);
+        app.goTo().groupPage();
+        Groups before = app.group().all();
+        app.group().create(group);
+        assertThat(app.group().count(), equalTo(before.size() + 1));
+        Groups after = app.group().all();
+        assertThat(after, equalTo(
+                before.withAdded(group.WithId(after.stream().mapToInt((g) -> g.getId()).max().getAsInt()))));
+    }
+}
+
+    /*@Test
     public void testBadCreation() throws Exception {
         app.goTo().groupPage();
         Groups before = app.group().all();
@@ -33,3 +47,5 @@ public class GroupCreationTests extends TestBase {
         assertThat(after, equalTo(before));
     }
 }
+
+     */
