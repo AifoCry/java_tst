@@ -156,7 +156,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.GroupDataGenerator">
+  <component name="RunManager" selected="Gradle.GroupCreationTests">
     <configuration name="GroupDataGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.appmanager.generators.GroupDataGenerator" />
       <module name="addressbook-web-tests.test" />
