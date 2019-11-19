@@ -3,18 +3,7 @@
     "name": "Alex 0",
     "surname": "Family 0",
     "mobilePhone": "777 0",
-    "mail1": "@mail 0"
-  },
-  {
-    "name": "Alex 1",
-    "surname": "Family 1",
-    "mobilePhone": "777 1",
-    "mail1": "@mail 1"
-  },
-  {
-    "name": "Alex 2",
-    "surname": "Family 2",
-    "mobilePhone": "777 2",
-    "mail1": "@mail 2"
+    "mail1": "@mail 0",
+    "group": "test1"
   }
 ]

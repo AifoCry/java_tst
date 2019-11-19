@@ -91,11 +91,12 @@ public class ContactData {
     private String mail1;
     private String mail2;
     private String mail3;
+    @Expose
     private String group;
     private String allPhones;
     private String allMails;
     private String address;
-    private File photo;
+    private File photo = new File("src/test/resources/stru.png");
 
 
 

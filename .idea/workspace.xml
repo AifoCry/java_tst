@@ -156,11 +156,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ContactDataGenerator">
+  <component name="RunManager" selected="Gradle.ContactCreationTest">
     <configuration name="ContactDataGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.appmanager.generators.ContactDataGenerator" />
       <module name="addressbook-web-tests.test" />
-      <option name="PROGRAM_PARAMETERS" value="-c 3 -f  src/test/resources/contacts.json -d json" />
+      <option name="PROGRAM_PARAMETERS" value="-c 1 -f  src/test/resources/contacts.json -d json" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/addressbook-web-tests" />
       <extension name="coverage">
         <pattern>
@@ -256,9 +256,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ContactCreationTest" />
         <item itemvalue="Application.ContactDataGenerator" />
         <item itemvalue="Gradle.GroupCreationTests" />
-        <item itemvalue="Gradle.ContactCreationTest" />
         <item itemvalue="Application.GroupDataGenerator" />
         <item itemvalue="Gradle.ContactDataTests" />
       </list>
