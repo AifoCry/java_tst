@@ -1,5 +1,7 @@
 package ru.stqa.pft.addressbook.appmanager.model;
 
+import com.google.gson.annotations.Expose;
+
 import java.io.File;
 import java.util.Objects;
 
@@ -77,11 +79,15 @@ public class ContactData {
 
 
     private  int id = Integer.MAX_VALUE;
+    @Expose
     private String name;
+    @Expose
     private String surname;
     private String homePhone;
+    @Expose
     private String mobilePhone;
     private String workPhone;
+    @Expose
     private String mail1;
     private String mail2;
     private String mail3;
