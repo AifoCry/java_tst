@@ -188,7 +188,7 @@
       <option name="METHOD_NAME" value="" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="SUITE" />
-      <option name="VM_PARAMETERS" value="-ea -Dbrowser=firefox" />
+      <option name="VM_PARAMETERS" value="-ea -Dbrowser=chrome" />
       <option name="PARAMETERS" value="" />
       <option name="OUTPUT_DIRECTORY" value="" />
       <option name="PROPERTIES_FILE" value="" />
@@ -224,8 +224,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.C:/Users/User/Documents/GitHub/java_tst/addressbook-web-tests/src/test/resources/testng-contacts.xml" />
-        <item itemvalue="TestNG.C:/Users/User/Documents/GitHub/java_tst/addressbook-web-tests/src/test/resources/testng-groups.xml" />
         <item itemvalue="Gradle.ContactCreationTest" />
+        <item itemvalue="TestNG.C:/Users/User/Documents/GitHub/java_tst/addressbook-web-tests/src/test/resources/testng-groups.xml" />
       </list>
     </recent_temporary>
   </component>
