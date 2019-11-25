@@ -1,11 +1,68 @@
 package ru.stqa.pft.addressbook.appmanager.model;
 
 import com.google.gson.annotations.Expose;
+import org.hibernate.annotations.Type;
 
+import javax.persistence.*;
 import java.io.File;
 import java.util.Objects;
+@Entity
+@Table (name = "addressbook")
 
 public class ContactData {
+
+    @Id
+    @Column(name = "id")
+    private  int id = Integer.MAX_VALUE;
+
+    @Column(name = "firstname")
+    @Expose
+    private String name;
+
+    @Expose
+    @Column(name = "lastname")
+    private String surname;
+    @Column(name = "home")
+    @Type(type = "text")
+    private String homePhone;
+    @Expose
+    @Type(type = "text")
+    @Column(name = "mobile")
+    private String mobilePhone;
+
+    @Override
+    public String toString() {
+        return "ContactData{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", homePhone='" + homePhone + '\'' +
+                ", mobilePhone='" + mobilePhone + '\'' +
+                ", workPhone='" + workPhone + '\'' +
+                '}';
+    }
+
+    @Column(name = "work")
+    @Type(type = "text")
+    private String workPhone;
+    @Expose
+    @Transient
+    private String mail1;
+    @Transient
+    private String mail2;
+    @Transient
+    private String mail3;
+    @Expose
+    @Transient
+    private String group;
+    @Transient
+    private String allPhones;
+    @Transient
+    private String allMails;
+    @Transient
+    private String address;
+    @Transient
+    private File photo = new File("src/test/resources/stru.png");
 
     public ContactData withId(int id) {
         this.id = id;
@@ -75,40 +132,6 @@ public class ContactData {
         this.photo = photo;
         return this;
     }
-
-
-
-    private  int id = Integer.MAX_VALUE;
-    @Expose
-    private String name;
-    @Expose
-    private String surname;
-    private String homePhone;
-    @Expose
-    private String mobilePhone;
-    private String workPhone;
-    @Expose
-    private String mail1;
-    private String mail2;
-    private String mail3;
-    @Expose
-    private String group;
-    private String allPhones;
-    private String allMails;
-    private String address;
-    private File photo = new File("src/test/resources/stru.png");
-
-
-
-    @Override
-    public String toString() {
-        return "ContactData{" +
-                "id='" + id + '\'' +
-                ", name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
-                '}';
-    }
-
 
 
     @Override
