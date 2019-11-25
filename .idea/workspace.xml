@@ -159,20 +159,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.DbConnectionTest">
-    <configuration name="ContactCreationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.HbConnectionTest">
+    <configuration name="ContactDeletionTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook-web-tests" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ru.stqa.pft.addressbook.appmanager.tests.ContactCreationTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ru.stqa.pft.addressbook.appmanager.tests.ContactDeletionTests&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value=":cleanTestContacts" />
-            <option value=":testContacts" />
+            <option value=":cleanTest" />
+            <option value=":test" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -186,6 +186,26 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook-web-tests" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="--tests &quot;ru.stqa.pft.addressbook.appmanager.tests.DbConnectionTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="HbConnectionTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook-web-tests" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;ru.stqa.pft.addressbook.appmanager.tests.HbConnectionTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -237,18 +257,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.ContactCreationTest" />
       <item itemvalue="Gradle.DbConnectionTest" />
       <item itemvalue="TestNG.C:/Users/User/Documents/GitHub/java_tst/addressbook-web-tests/src/test/resources/testng-contacts.xml" />
       <item itemvalue="TestNG.C:/Users/User/Documents/GitHub/java_tst/addressbook-web-tests/src/test/resources/testng-groups.xml" />
+      <item itemvalue="Gradle.ContactDeletionTests" />
+      <item itemvalue="Gradle.HbConnectionTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.HbConnectionTest" />
+        <item itemvalue="Gradle.ContactDeletionTests" />
         <item itemvalue="Gradle.DbConnectionTest" />
         <item itemvalue="Gradle.DbConnectionTest" />
         <item itemvalue="TestNG.C:/Users/User/Documents/GitHub/java_tst/addressbook-web-tests/src/test/resources/testng-contacts.xml" />
-        <item itemvalue="Gradle.ContactCreationTest" />
-        <item itemvalue="TestNG.C:/Users/User/Documents/GitHub/java_tst/addressbook-web-tests/src/test/resources/testng-groups.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -300,11 +321,6 @@
           <url>file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/tests/ContactDataTests.java</url>
           <line>33</line>
           <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/appmanager/ContactHelper.java</url>
-          <line>135</line>
-          <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/tests/DbConnectionTest.java</url>

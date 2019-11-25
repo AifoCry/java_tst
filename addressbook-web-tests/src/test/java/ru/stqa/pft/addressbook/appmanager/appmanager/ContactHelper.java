@@ -48,6 +48,10 @@ public class ContactHelper extends HelperBase {
         click(By.xpath("//input[@value='Delete']"));
     }
 
+    public void waitDelete() {
+        wd.findElement(By.cssSelector("div.msgbox"));
+    }
+
     public void edit(int index) {
         wd.findElements(By.xpath("//img[@alt='Edit']")).get(index).click();
         //click(By.xpath("//img[@alt='Edit']"));
@@ -103,9 +107,12 @@ public class ContactHelper extends HelperBase {
         selectContactByID(contact.getId());
         deleteSelectContact();
         isAlertPresent();
+        waitDelete();
         contactCache = null;
         app.goTo().homePage();
     }
+
+
 
     public int getContactCount() {
         return wd.findElements(By.name("entry")).size();
