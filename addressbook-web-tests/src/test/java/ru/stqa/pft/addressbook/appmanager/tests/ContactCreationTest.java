@@ -23,11 +23,11 @@ public class ContactCreationTest extends TestBase {
 
     @BeforeMethod
     public void ensurePreconditions() {
-        app.goTo().groupPage();
-        if (app.group().all().size() == 0) {
+        if (app.db().groups().size() == 0 ){
+            app.goTo().groupPage();
             app.group().create(new GroupData().WithName("test1"));
+            app.goTo().homePage();
         }
-        app.goTo().homePage();
     }
 
     @DataProvider
@@ -50,13 +50,13 @@ public class ContactCreationTest extends TestBase {
 
     @Test(dataProvider = "validContactsFromJson")
     public void testContactCreation(ContactData contact) throws Exception {
-        Contacts before = app.contact().all();
+        Contacts before = app.db().contacts();
         //File photo = new File("src/test/resources/stru.png");
         //ContactData contact = new ContactData()
         //        .withName("Alexandr").withSurname("Eliseev").withMobilePhone("+79167777777").withPhoto(photo)
          //       .withMail1("alex@yandex.ru").withGroup("test1");
         app.contact().create((contact), true);
-        Contacts after = app.contact().all();
+        Contacts after = app.db().contacts();
         assertThat(after.size(), equalTo(before.size() +1));
         assertThat(after, equalTo(before.withAdded(
                 contact.withId(after.stream().mapToInt((g) -> g.getId()).max().getAsInt())))); //Функция преобразования обьекта в число.

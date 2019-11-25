@@ -46,11 +46,14 @@ public class ContactData {
     @Type(type = "text")
     private String workPhone;
     @Expose
-    @Transient
+    @Column(name = "email")
+    @Type(type = "text")
     private String mail1;
-    @Transient
+    @Column(name = "email2")
+    @Type(type = "text")
     private String mail2;
-    @Transient
+    @Column(name = "email3")
+    @Type(type = "text")
     private String mail3;
     @Expose
     @Transient
@@ -133,21 +136,26 @@ public class ContactData {
         return this;
     }
 
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         ContactData that = (ContactData) o;
-        return id == that.id &&
-                Objects.equals(name, that.name) &&
-                Objects.equals(surname, that.surname);
+        return Objects.equals(name, that.name) &&
+                Objects.equals(surname, that.surname) &&
+                Objects.equals(homePhone, that.homePhone) &&
+                Objects.equals(mobilePhone, that.mobilePhone) &&
+                Objects.equals(workPhone, that.workPhone) &&
+                Objects.equals(mail1, that.mail1) &&
+                Objects.equals(mail2, that.mail2) &&
+                Objects.equals(mail3, that.mail3);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, surname);
+        return Objects.hash(name, surname, homePhone, mobilePhone, workPhone, mail1, mail2, mail3);
     }
+
 
     /* Старый конструктор
     public ContactData(int id, String name, String surname, String phone, String mail, String group) {

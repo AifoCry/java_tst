@@ -18,21 +18,22 @@ public class GroupModificationTests extends TestBase {
 
     @BeforeMethod
     public void ensurePreconditions() {
-        app.goTo().groupPage();
-        if (app.group().all().size() == 0) {
+        if (app.db().groups().size() == 0 ){
+            app.goTo().groupPage();
             app.group().create(new GroupData().WithName("test1"));
+        //if (app.group().all().size() == 0) старая проверка
         }
     }
 
     @Test
     public void testGroupModification() throws Exception {
-        Groups before = app.group().all();
+        Groups before = app.db().groups(); //app.group().all();
         GroupData modifiedGroup = before.iterator().next();
         GroupData group = new GroupData()
                 .WithId(modifiedGroup.getId()).WithName("test1").WithFooter("test2").WithHeader("test3");
         app.group().modify(group);
         assertThat(app.group().count(),equalTo(before.size()));
-        Groups after = app.group().all();
+        Groups after = app.db().groups(); //app.group().all();
         assertThat(after, equalTo(before.without(modifiedGroup).withAdded(group)));
 
 

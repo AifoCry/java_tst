@@ -104,6 +104,7 @@ public class ContactHelper extends HelperBase {
     }
 
     public void delete(ContactData contact) {
+        app.goTo().homePage();
         selectContactByID(contact.getId());
         deleteSelectContact();
         isAlertPresent();
