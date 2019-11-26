@@ -8,9 +8,17 @@ import org.testng.annotations.BeforeSuite;
 import ru.stqa.pft.addressbook.appmanager.appmanager.ApplicationManager;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import ru.stqa.pft.addressbook.appmanager.model.Contacts;
+import ru.stqa.pft.addressbook.appmanager.model.GroupData;
+import ru.stqa.pft.addressbook.appmanager.model.Groups;
 
 import java.lang.reflect.Method;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.stream.Collectors;
+
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 public class TestBase {
 
@@ -38,4 +46,13 @@ public class TestBase {
         logger.info("stop " + m.getName());
     }
 
+    public void verifyGroupListInUi() {
+        if (Boolean.getBoolean("verifyUI")) {
+            Groups dbGroups = app.db().groups();
+            Groups uiGroups = app.group().all();
+            assertThat(uiGroups, equalTo(dbGroups.stream()
+                    .map((g) -> new GroupData().WithId(g.getId())
+                            .WithName(g.getName())).collect(Collectors.toSet())));
+        }
+    }
 }
