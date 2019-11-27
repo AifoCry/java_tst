@@ -159,7 +159,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/User/Documents/GitHub/java_tst/addressbook-web-tests/src/test/resources/testng-groups.xml">
+  <component name="RunManager" selected="TestNG.C:/Users/User/Documents/GitHub/java_tst/addressbook-web-tests/src/test/resources/testng-contacts.xml">
     <configuration name="ContactCreationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -240,9 +240,9 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="C:/Users/User/Documents/GitHub/java_tst/addressbook-web-tests/src/test/resources/testng-groups.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="C:/Users/User/Documents/GitHub/java_tst/addressbook-web-tests/src/test/resources/testng-contacts.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web-tests.test" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/testng-groups.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/testng-contacts.xml" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -259,19 +259,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.ContactModificationTests" />
-      <item itemvalue="Gradle.ContactDeletionTests" />
       <item itemvalue="Gradle.ContactCreationTest" />
       <item itemvalue="Gradle.GroupModificationTests" />
-      <item itemvalue="TestNG.C:/Users/User/Documents/GitHub/java_tst/addressbook-web-tests/src/test/resources/testng-groups.xml" />
+      <item itemvalue="Gradle.ContactModificationTests" />
+      <item itemvalue="Gradle.ContactDeletionTests" />
+      <item itemvalue="TestNG.C:/Users/User/Documents/GitHub/java_tst/addressbook-web-tests/src/test/resources/testng-contacts.xml" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/User/Documents/GitHub/java_tst/addressbook-web-tests/src/test/resources/testng-groups.xml" />
-        <item itemvalue="Gradle.GroupModificationTests" />
-        <item itemvalue="Gradle.ContactDeletionTests" />
+        <item itemvalue="TestNG.C:/Users/User/Documents/GitHub/java_tst/addressbook-web-tests/src/test/resources/testng-contacts.xml" />
         <item itemvalue="Gradle.ContactCreationTest" />
         <item itemvalue="Gradle.ContactModificationTests" />
+        <item itemvalue="Gradle.ContactDeletionTests" />
+        <item itemvalue="Gradle.GroupModificationTests" />
       </list>
     </recent_temporary>
   </component>
@@ -316,8 +316,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/tests/TestBase.java</url>
-          <line>51</line>
+          <line>52</line>
           <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/tests/GroupCreationTests.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/tests/TestBase.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="47" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

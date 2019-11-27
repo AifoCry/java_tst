@@ -5,7 +5,10 @@ import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
 import java.io.File;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
+
 @Entity
 @Table (name = "addressbook")
 
@@ -29,18 +32,6 @@ public class ContactData {
     @Type(type = "text")
     @Column(name = "mobile")
     private String mobilePhone;
-
-    @Override
-    public String toString() {
-        return "ContactData{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
-                ", homePhone='" + homePhone + '\'' +
-                ", mobilePhone='" + mobilePhone + '\'' +
-                ", workPhone='" + workPhone + '\'' +
-                '}';
-    }
 
     @Column(name = "work")
     @Type(type = "text")
@@ -136,26 +127,6 @@ public class ContactData {
         return this;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        ContactData that = (ContactData) o;
-        return Objects.equals(name, that.name) &&
-                Objects.equals(surname, that.surname) &&
-                Objects.equals(homePhone, that.homePhone) &&
-                Objects.equals(mobilePhone, that.mobilePhone) &&
-                Objects.equals(workPhone, that.workPhone) &&
-                Objects.equals(mail1, that.mail1) &&
-                Objects.equals(mail2, that.mail2) &&
-                Objects.equals(mail3, that.mail3);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(name, surname, homePhone, mobilePhone, workPhone, mail1, mail2, mail3);
-    }
-
 
     /* Старый конструктор
     public ContactData(int id, String name, String surname, String phone, String mail, String group) {
@@ -201,6 +172,21 @@ public class ContactData {
         return group;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        ContactData that = (ContactData) o;
+        return id == that.id &&
+                Objects.equals(name, that.name) &&
+                Objects.equals(surname, that.surname);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, name, surname);
+    }
+
     public String getWorkPhone() {
         return workPhone;
     }
@@ -222,6 +208,24 @@ public class ContactData {
     }
     public String getAddress() {
         return address;
+    }
+
+    @Override
+    public String toString() {
+        return "ContactData{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", homePhone='" + homePhone + '\'' +
+                ", mobilePhone='" + mobilePhone + '\'' +
+                ", workPhone='" + workPhone + '\'' +
+                ", mail1='" + mail1 + '\'' +
+                ", mail2='" + mail2 + '\'' +
+                ", mail3='" + mail3 + '\'' +
+                ", group='" + group + '\'' +
+                ", allPhones='" + allPhones + '\'' +
+                ", allMails='" + allMails + '\'' +
+                ", address='" + address + '\'' +
+                '}';
     }
 
     public File getPhoto() {

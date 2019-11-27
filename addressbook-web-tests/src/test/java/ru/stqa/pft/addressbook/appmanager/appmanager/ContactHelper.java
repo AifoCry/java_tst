@@ -69,6 +69,7 @@ public class ContactHelper extends HelperBase {
 
 
     public void modify(ContactData contact) {
+        app.goTo().homePage();
         editByIcon(contact.getId());
         fillContactForm((contact),false);
         submitEditContact();
