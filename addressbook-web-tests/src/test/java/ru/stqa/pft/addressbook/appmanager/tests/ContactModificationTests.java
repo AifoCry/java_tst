@@ -17,7 +17,7 @@ public class ContactModificationTests extends TestBase {
             app.goTo().homePage();
             app.contact().create(new ContactData()
                     .withName("Alexandr").withSurname("Eliseev").withMobilePhone("+79167777777")
-                    .withMail1("alex@yandex.ru").withGroup("test1"),true);
+                    .withMail1("alex@yandex.ru"),true);
         }
        // if (app.contact().all().size() == 0)
     }

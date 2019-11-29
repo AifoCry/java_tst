@@ -7,6 +7,8 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.thoughtworks.xstream.XStream;
 import ru.stqa.pft.addressbook.appmanager.model.GroupData;
+import ru.stqa.pft.addressbook.appmanager.model.Groups;
+import ru.stqa.pft.addressbook.appmanager.tests.TestBase;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -15,7 +17,7 @@ import java.io.Writer;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GroupDataGenerator {
+public class GroupDataGenerator extends TestBase {
 
     @Parameter(names = "-c", description = "Group count")
     public  int count;

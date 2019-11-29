@@ -46,9 +46,14 @@ public class ContactData {
     @Column(name = "email3")
     @Type(type = "text")
     private String mail3;
-    @Expose
-    @Transient
-    private String group;
+   // @Transient
+   // private String group;
+
+    @ManyToMany(fetch = FetchType.EAGER)
+    @JoinTable(name ="address_in_groups"
+            , joinColumns = @JoinColumn(name = "id"), inverseJoinColumns = @JoinColumn(name = "group_id"))
+    private Set<GroupData> groups = new HashSet<GroupData>();
+
     @Transient
     private String allPhones;
     @Transient
@@ -93,10 +98,10 @@ public class ContactData {
         return this;
     }
 
-    public ContactData withGroup(String group) {
-        this.group = group;
-        return this;
-    }
+    //public ContactData withGroup(String group) {
+    //    this.group = group;
+    //    return this;
+    //}
     public ContactData withAllPhones(String allPhones) {
         this.allPhones = allPhones;
         return this;
@@ -168,9 +173,9 @@ public class ContactData {
         return mail1;
     }
 
-    public String getGroup() {
-        return group;
-    }
+    //public String getGroup() {
+    //    return group;
+    //}
 
     @Override
     public boolean equals(Object o) {
@@ -210,6 +215,10 @@ public class ContactData {
         return address;
     }
 
+    public Groups getGroups() {
+        return new Groups(groups);
+    }
+
     @Override
     public String toString() {
         return "ContactData{" +
@@ -221,7 +230,6 @@ public class ContactData {
                 ", mail1='" + mail1 + '\'' +
                 ", mail2='" + mail2 + '\'' +
                 ", mail3='" + mail3 + '\'' +
-                ", group='" + group + '\'' +
                 ", allPhones='" + allPhones + '\'' +
                 ", allMails='" + allMails + '\'' +
                 ", address='" + address + '\'' +
@@ -231,5 +239,11 @@ public class ContactData {
     public File getPhoto() {
         return photo;
     }
+
+    public ContactData inGroup(GroupData group) {
+        groups.add(group);
+        return this;
+    }
+
 
 }

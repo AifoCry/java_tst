@@ -6,6 +6,10 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.thoughtworks.xstream.XStream;
 import ru.stqa.pft.addressbook.appmanager.model.ContactData;
+import ru.stqa.pft.addressbook.appmanager.model.Groups;
+import ru.stqa.pft.addressbook.appmanager.tests.TestBase;
+import ru.stqa.pft.addressbook.appmanager.model.GroupData;
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -13,7 +17,7 @@ import java.io.Writer;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ContactDataGenerator {
+public class ContactDataGenerator extends TestBase {
 
     @Parameter(names = "-c", description = "Contact count")
     public  int count;
@@ -21,6 +25,9 @@ public class ContactDataGenerator {
     public  String file;
     @Parameter(names =  "-d", description = "Data format")
     public  String format;
+
+
+
 
     public static void main (String[] args) throws IOException {
         ContactDataGenerator generator = new ContactDataGenerator();
@@ -69,8 +76,10 @@ public class ContactDataGenerator {
         System.out.println(new File(".").getAbsoluteFile());
         try (Writer writer = new FileWriter(file))  {
             for (ContactData contact : Contacts) {
-                writer.write((String.format("%s;%s;%s;%s;%s\n", contact.getName(), contact.getSurname(),
-                        contact.getMail1(), contact.getMobilePhone(), contact.getGroup())));
+                writer.write((String.format("%s;%s;%s;%s;\n", contact.getName(), contact.getSurname(),
+                        contact.getMail1(), contact.getMobilePhone())));
+                //, contact.getGroups().iterator().next().getName())));
+                //contact.getGroups().iterator().next().getName()
             }
         }
     }
@@ -79,7 +88,8 @@ public class ContactDataGenerator {
         List<ContactData> Contacts = new ArrayList<ContactData>();
         for (int i = 0; i < count; i++) {
             Contacts.add(new ContactData().withName(String.format("Alex %s", i))
-                    .withSurname(String.format("Family %s", i)).withMail1(String.format("@mail %s", i)).withMobilePhone(String.format("777 %s", i)).withGroup("test1"));
+                    .withSurname(String.format("Family %s", i)).withMail1(String.format("@mail %s", i))
+                    .withMobilePhone(String.format("888 %s", i)));
         }
         return Contacts;
     }
