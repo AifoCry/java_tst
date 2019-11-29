@@ -34,6 +34,7 @@ public class ContactAddInGroup extends TestBase {
     public void testContactAddInGroup() {
         ContactData selectedContact = app.db().contacts().iterator().next();
         Groups groups = app.db().groups();
+        Groups test =  selectedContact.getGroups();
         GroupData selectedGroup = groups.iterator().next();
         app.goTo().homePage();
         ContactData contact = new ContactData().withId(selectedContact.getId()).inGroup(selectedGroup);
@@ -41,6 +42,7 @@ public class ContactAddInGroup extends TestBase {
             app.contact().deleteFromGroupFinal(contact,selectedGroup);
             app.goTo().homePage();
         }
+
         Contacts contactInGroupBefore=  app.db().groups().iterator().next().WithId(selectedGroup.getId()).getContacts();
         app.contact().allGroupsInContactPage();
         app.contact().addInGroupFinal(contact);
