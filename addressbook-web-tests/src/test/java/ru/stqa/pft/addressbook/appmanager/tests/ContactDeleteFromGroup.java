@@ -36,11 +36,22 @@ public class ContactDeleteFromGroup extends TestBase {
     public void testContactDeleteFromGroup() {
         ContactData selectedContact = app.db().contacts().iterator().next();
         Groups groups = app.db().groups();
+        Contacts contacts = app.db().contacts();
         GroupData selectedGroup = groups.iterator().next();
         app.goTo().homePage();
         ContactData contact = new ContactData().withId(selectedContact.getId()).inGroup(selectedGroup);
         if (selectedContact.getGroups().size() == 0) {
             app.contact().addInGroupFinal(contact);
+        }
+
+        for (ContactData contactToAdd1 : contacts) {
+            Groups contactGroups = contactToAdd1.getGroups();
+            if (contactGroups.size() != groups.size()) {
+                groups.removeAll(contactGroups);
+                //groupToAdd = groups.iterator().next();
+                //contactToAdd = contactToAdd1;
+                break;
+            }
         }
         Contacts contactInGroupBefore=  app.db().groups().iterator().next().WithId(selectedGroup.getId()).getContacts();
         app.goTo().homePage();
