@@ -36,6 +36,17 @@ public class ContactHelper extends HelperBase {
 
     }
 
+    public void fillContactForm(ContactData contactData) {
+        type(By.name("firstname"), contactData.getName());
+        type(By.name("lastname"), contactData.getSurname());
+        type(By.name("mobile"), contactData.getMobilePhone());
+        type(By.name("email"), contactData.getMail1());
+        attach(By.name("photo"), contactData.getPhoto());
+    }
+
+
+
+
     public void submitNewContact() {
         click(By.xpath("(//input[@name='submit'])[2]"));
     }
@@ -98,6 +109,14 @@ public class ContactHelper extends HelperBase {
     public void create(ContactData contact, boolean b) {
         app.goTo().createContact();
         fillContactForm(contact, b);
+        submitNewContact();
+        contactCache = null;
+        app.goTo().homePage();
+    }
+
+    public void create(ContactData contact) {
+        app.goTo().createContact();
+        fillContactForm(contact);
         submitNewContact();
         contactCache = null;
         app.goTo().homePage();
@@ -183,14 +202,15 @@ public class ContactHelper extends HelperBase {
                 .withMail1(mail1).withMail2(mail2).withMail3(mail3).withAddress(address);
     }
 
-    public void addContactToGroupAfterSelect(ContactData contact) {
-        new Select(wd.findElement(By.name("to_group"))).selectByVisibleText(contact.getGroups().iterator().next().getName());
+    public void addContactToGroupAfterSelect(GroupData selectedGroup) {
+        String id = String.valueOf(selectedGroup.getId());
+        new Select(wd.findElement(By.name("to_group"))).selectByValue(id);
         click(By.name("add"));
     }
 
-    public void addInGroupFinal(ContactData contact) {
-        selectContactByID(contact.getId());
-        addContactToGroupAfterSelect(contact);
+    public void addInGroupFinal(ContactData selectedContact, GroupData selectedGroup) {
+        selectContactByID(selectedContact.getId());
+        addContactToGroupAfterSelect(selectedGroup);
     }
 
     public void deleteFromGroupFinal(ContactData contact, GroupData group) {
