@@ -6,14 +6,19 @@ import org.testng.annotations.Test;
 import ru.lanwen.verbalregex.VerbalExpression;
 import ru.stqa.pft.mantis.appmanager.HttpSession;
 import ru.stqa.pft.mantis.model.MailMessage;
+import ru.stqa.pft.mantis.model.UserData;
+import ru.stqa.pft.mantis.model.Users;
 
 import javax.mail.MessagingException;
 import java.io.IOException;
+import java.sql.SQLException;
 import java.util.List;
 
 import static org.testng.Assert.assertTrue;
 
 public class ChangePasswordTests extends TestBase{
+
+    private UserData user;
 
     @BeforeMethod
     public void startMailServer(){
@@ -21,23 +26,32 @@ public class ChangePasswordTests extends TestBase{
     }
 
     @Test
-    public void testChangePassword() throws IOException, MessagingException {
-        String user = "user2000";
-        String password = "password1234";
+    public void testChangePassword() throws IOException, MessagingException, SQLException {
+        Users users = app.dbHelper().userInfoFromDb();
+        for (UserData userFind : users) {
+            if (!userFind.getName().equals("administrator")) {
+                //users.iterator().next();
+                user = userFind;
+                break;
+            }
+        }
+        //String user = "user2000";
+        //String password = "password1234";
         String passwordNew = "password123";
-        String email = "user2000@localhost";
+        String email = user.getEmail();
+        String name = user.getName();
         String passwordAdmin = "root";
         String loginAdmin = "administrator";
         app.registration().login(loginAdmin, passwordAdmin);
-        app.registration().chooseUser(user, passwordAdmin);
+        app.registration().chooseUser(name, passwordAdmin);
         app.registration().resetPassword();
         List<MailMessage> mailMessages = app.mail().waitForMail(1, 30000);
         String confirmationLink = findConfirmationLink(mailMessages, email);
         app.registration().finish(confirmationLink, passwordNew);
-        assertTrue(app.newSession().login(user, passwordNew));
+        assertTrue(app.newSession().login(name, passwordNew));
         HttpSession session = app.newSession();
-        assertTrue( session.login(user, passwordNew));
-        assertTrue(session.isLoggedInAs(user));
+        assertTrue( session.login(name, passwordNew));
+        assertTrue(session.isLoggedInAs(name));
     }
 
     private String findConfirmationLink(List<MailMessage> mailMessages, String email) {
