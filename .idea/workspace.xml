@@ -171,7 +171,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.GeoIpServiceTests">
+  <component name="RunManager" selected="Gradle.SoapTests">
     <configuration name="ChangePasswordTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -198,26 +198,6 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$/mantis-tests" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="--tests &quot;ru.stqa.pft.mantis.appmanager.DbHelper&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="DbHelper.testDbConnection" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/mantis-tests" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ru.stqa.pft.mantis.appmanager.DbHelper.testDbConnection&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -272,20 +252,40 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="SoapTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/mantis-tests" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;ru.stqa.pft.mantis.tests.SoapTests&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Gradle.RegistrationTests" />
       <item itemvalue="Gradle.ChangePasswordTests" />
-      <item itemvalue="Gradle.DbHelper.testDbConnection" />
       <item itemvalue="Gradle.DbHelper" />
       <item itemvalue="Gradle.GeoIpServiceTests" />
+      <item itemvalue="Gradle.SoapTests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.SoapTests" />
         <item itemvalue="Gradle.GeoIpServiceTests" />
         <item itemvalue="Gradle.ChangePasswordTests" />
         <item itemvalue="Gradle.RegistrationTests" />
         <item itemvalue="Gradle.DbHelper" />
-        <item itemvalue="Gradle.DbHelper.testDbConnection" />
       </list>
     </recent_temporary>
   </component>
