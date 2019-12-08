@@ -23,6 +23,9 @@
     <projectState path="$PROJECT_DIR$/sandbox">
       <ProjectState />
     </projectState>
+    <projectState path="$PROJECT_DIR$/soap-sample">
+      <ProjectState />
+    </projectState>
   </component>
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
@@ -132,8 +135,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/sandbox/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/mantis-tests/src/test/resources" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/soap-sample/build.gradle" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
@@ -168,33 +171,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.ChangePasswordTests">
+  <component name="RunManager" selected="Gradle.GeoIpServiceTests">
     <configuration name="ChangePasswordTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/mantis-tests" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="--tests &quot;ru.stqa.pft.mantis.tests.ChangePasswordTests&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="ContactDeleteFromGroup" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook-web-tests" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ru.stqa.pft.addressbook.appmanager.tests.ContactDeleteFromGroup&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -249,6 +232,26 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="GeoIpServiceTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/soap-sample" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;ru.stqa.pft.soap.GeoIpServiceTests&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="RegistrationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -271,18 +274,18 @@
     </configuration>
     <list>
       <item itemvalue="Gradle.RegistrationTests" />
-      <item itemvalue="Gradle.ContactDeleteFromGroup" />
       <item itemvalue="Gradle.ChangePasswordTests" />
       <item itemvalue="Gradle.DbHelper.testDbConnection" />
       <item itemvalue="Gradle.DbHelper" />
+      <item itemvalue="Gradle.GeoIpServiceTests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.GeoIpServiceTests" />
         <item itemvalue="Gradle.ChangePasswordTests" />
         <item itemvalue="Gradle.RegistrationTests" />
         <item itemvalue="Gradle.DbHelper" />
         <item itemvalue="Gradle.DbHelper.testDbConnection" />
-        <item itemvalue="Gradle.ContactDeleteFromGroup" />
       </list>
     </recent_temporary>
   </component>
