@@ -17,6 +17,9 @@
     <projectState path="$PROJECT_DIR$/addressbook-web-tests">
       <ProjectState />
     </projectState>
+    <projectState path="$PROJECT_DIR$/github-sample">
+      <ProjectState />
+    </projectState>
     <projectState path="$PROJECT_DIR$/mantis-tests">
       <ProjectState />
     </projectState>
@@ -138,7 +141,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/sandbox/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/rest-sample/build.gradle" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/github-sample/build.gradle" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -175,13 +178,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.RestAssuredTests">
-    <configuration name="ChangePasswordTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.GithubTests">
+    <configuration name="GeoIpServiceTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/mantis-tests" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/soap-sample" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ru.stqa.pft.mantis.tests.ChangePasswordTests&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ru.stqa.pft.soap.GeoIpServiceTests&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -196,12 +199,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="GeoIpServiceTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GithubTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/soap-sample" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/github-sample" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ru.stqa.pft.soap.GeoIpServiceTests&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ru.stqa.pft.github.GithubTests&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -277,19 +280,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Gradle.ChangePasswordTests" />
       <item itemvalue="Gradle.GeoIpServiceTests" />
       <item itemvalue="Gradle.SoapTests" />
       <item itemvalue="Gradle.RestTests" />
       <item itemvalue="Gradle.RestAssuredTests" />
+      <item itemvalue="Gradle.GithubTests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.GithubTests" />
         <item itemvalue="Gradle.RestAssuredTests" />
         <item itemvalue="Gradle.RestTests" />
         <item itemvalue="Gradle.SoapTests" />
         <item itemvalue="Gradle.GeoIpServiceTests" />
-        <item itemvalue="Gradle.ChangePasswordTests" />
       </list>
     </recent_temporary>
   </component>
