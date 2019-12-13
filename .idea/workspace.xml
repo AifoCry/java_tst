@@ -175,7 +175,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.RestTests">
+  <component name="RunManager" selected="Gradle.RestAssuredTests">
     <configuration name="ChangePasswordTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -216,12 +216,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="RegistrationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="RestAssuredTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/mantis-tests" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/rest-sample" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ru.stqa.pft.mantis.tests.RegistrationTests&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ru.stqa.pft.rest.RestAssuredTests&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -277,19 +277,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Gradle.RegistrationTests" />
       <item itemvalue="Gradle.ChangePasswordTests" />
       <item itemvalue="Gradle.GeoIpServiceTests" />
       <item itemvalue="Gradle.SoapTests" />
       <item itemvalue="Gradle.RestTests" />
+      <item itemvalue="Gradle.RestAssuredTests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.RestAssuredTests" />
         <item itemvalue="Gradle.RestTests" />
         <item itemvalue="Gradle.SoapTests" />
         <item itemvalue="Gradle.GeoIpServiceTests" />
         <item itemvalue="Gradle.ChangePasswordTests" />
-        <item itemvalue="Gradle.RegistrationTests" />
       </list>
     </recent_temporary>
   </component>
