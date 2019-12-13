@@ -148,22 +148,22 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="ru.stqa.pft.rest" />
-      <recent name="ru.stqa.pft.mantis.appmanager" />
-      <recent name="ru.stqa.pft.addressbook.appmanager.appmanager" />
-      <recent name="ru.stqa.pft.addressbook" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="ru.stqa.pft.sandbox" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Documents\GitHub\java_tst\mantis-tests\src\test\resources" />
+      <recent name="C:\Users\User\Documents\GitHub\java_tst\addressbook-web-tests\src\test\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="ru.stqa.pft.mantis.appmanager" />
       <recent name="ru.stqa.pft.mantis.tests" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\User\Documents\GitHub\java_tst\mantis-tests\src\test\resources" />
-      <recent name="C:\Users\User\Documents\GitHub\java_tst\addressbook-web-tests\src\test\resources" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ru.stqa.pft.rest" />
+      <recent name="ru.stqa.pft.mantis.appmanager" />
+      <recent name="ru.stqa.pft.addressbook.appmanager.appmanager" />
+      <recent name="ru.stqa.pft.addressbook" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -178,7 +178,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.GithubTests">
+  <component name="RunManager" selected="Gradle.SoapTests">
     <configuration name="GeoIpServiceTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -288,10 +288,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.SoapTests" />
         <item itemvalue="Gradle.GithubTests" />
         <item itemvalue="Gradle.RestAssuredTests" />
         <item itemvalue="Gradle.RestTests" />
-        <item itemvalue="Gradle.SoapTests" />
         <item itemvalue="Gradle.GeoIpServiceTests" />
       </list>
     </recent_temporary>
@@ -685,6 +685,21 @@
           <url>file://$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/tests/ChangePasswordTests.java</url>
           <line>35</line>
           <option name="timeStamp" value="386" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/tests/SoapTests.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="404" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/tests/SoapTests.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="405" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/tests/SoapTests.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="406" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/JamesHelper1.java</url>
