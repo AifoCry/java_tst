@@ -46,7 +46,25 @@ task testContacts(type: Test) {
         suites 'src/test/resources/testng-contacts.xml'
     }
     if (project.hasProperty('browser')) {
-    systemProperty 'browser', "${browser}"
+        systemProperty 'browser', "${browser}"
+    }
+    if (project.hasProperty('platform')) {
+        systemProperty 'platform', "${platform}"
+    }
+    if (project.hasProperty('target')) {
+        systemProperty 'target', "${target}"
+    }
+    if (project.hasProperty('veryfyUI')) {
+        systemProperty 'veryfyUI', "${veryfyUI}"
+    }
+}
+
+task testAll(type: Test) {
+    useTestNG {
+        suites 'src/test/resources/testng-all.xml'
+    }
+    if (project.hasProperty('browser')) {
+        systemProperty 'browser', "${browser}"
     }
     if (project.hasProperty('platform')) {
         systemProperty 'platform', "${platform}"
