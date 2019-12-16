@@ -54,11 +54,11 @@ public class ContactDeleteFromGroup extends TestBase {
         }
 
         if (selectedContact.getGroups().size() == 0) {
-            selectedGroup = groups.iterator().next(); //берем рандомную группу. И далее она будет единственная с включеным контактом. Можно заново не искать.
+            selectedGroup = groups.iterator().next();
             app.contact().addInGroupFinal(selectedContact, selectedGroup);
         }
 
-        Contacts allContactsBefore = app.db().contacts(); // обновили т.к contactBefore = selectedContact но без ID группы.
+        Contacts allContactsBefore = app.db().contacts(); // обновили
         for (ContactData OneOfContactBefore : allContactsBefore) {
             if (OneOfContactBefore.getId() == selectedContact.getId()) {
                 contactBefore = OneOfContactBefore;
@@ -68,8 +68,6 @@ public class ContactDeleteFromGroup extends TestBase {
 
         app.goTo().homePage();
         app.contact().deleteFromGroupFinal(selectedContact, selectedGroup);
-
-        // получаем данные для сравнения после
 
         Contacts allContactsAfter = app.db().contacts(); //еще раз обновили
         for (ContactData OneOfContactAfter : allContactsAfter) {
