@@ -3,6 +3,7 @@ package ru.stqa.pft.addressbook.appmanager.appmanager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.Sleeper;
 import org.testng.Assert;
 import ru.stqa.pft.addressbook.appmanager.model.ContactData;
 import ru.stqa.pft.addressbook.appmanager.model.Contacts;
@@ -87,6 +88,7 @@ public class ContactHelper extends HelperBase {
 
     public void modify(ContactData contact) {
         app.goTo().homePage();
+        app.contact().allGroupsInContactPage();
         editByIcon(contact.getId());
         fillContactForm((contact), false);
         submitEditContact();
@@ -131,6 +133,7 @@ public class ContactHelper extends HelperBase {
 
     public void delete(ContactData contact) {
         app.goTo().homePage();
+        app.contact().allGroupsInContactPage();
         selectContactByID(contact.getId());
         deleteSelectContact();
         isAlertPresent();
