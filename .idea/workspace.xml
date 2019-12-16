@@ -148,22 +148,22 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="ru.stqa.pft.sandbox" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\User\Documents\GitHub\java_tst\mantis-tests\src\test\resources" />
-      <recent name="C:\Users\User\Documents\GitHub\java_tst\addressbook-web-tests\src\test\resources" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="ru.stqa.pft.mantis.appmanager" />
-      <recent name="ru.stqa.pft.mantis.tests" />
-    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="ru.stqa.pft.rest" />
       <recent name="ru.stqa.pft.mantis.appmanager" />
       <recent name="ru.stqa.pft.addressbook.appmanager.appmanager" />
       <recent name="ru.stqa.pft.addressbook" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ru.stqa.pft.sandbox" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ru.stqa.pft.mantis.appmanager" />
+      <recent name="ru.stqa.pft.mantis.tests" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Documents\GitHub\java_tst\mantis-tests\src\test\resources" />
+      <recent name="C:\Users\User\Documents\GitHub\java_tst\addressbook-web-tests\src\test\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -178,13 +178,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.RestTests">
-    <configuration name="GeoIpServiceTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.ContactDataTests">
+    <configuration name="ContactCreationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/soap-sample" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook-web-tests" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ru.stqa.pft.soap.GeoIpServiceTests&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ru.stqa.pft.addressbook.appmanager.tests.ContactCreationTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -199,12 +199,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="GithubTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ContactDataTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/github-sample" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook-web-tests" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ru.stqa.pft.github.GithubTests&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ru.stqa.pft.addressbook.appmanager.tests.ContactDataTests&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -219,12 +219,32 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="RestAssuredTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ContactDeletionTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/rest-sample" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook-web-tests" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ru.stqa.pft.rest.RestAssuredTests&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ru.stqa.pft.addressbook.appmanager.tests.ContactDeletionTests&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ContactModificationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook-web-tests" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;ru.stqa.pft.addressbook.appmanager.tests.ContactModificationTests&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -259,40 +279,20 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="SoapTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/mantis-tests" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ru.stqa.pft.mantis.tests.SoapTests&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Gradle.GeoIpServiceTests" />
-      <item itemvalue="Gradle.SoapTests" />
       <item itemvalue="Gradle.RestTests" />
-      <item itemvalue="Gradle.RestAssuredTests" />
-      <item itemvalue="Gradle.GithubTests" />
+      <item itemvalue="Gradle.ContactDataTests" />
+      <item itemvalue="Gradle.ContactDeletionTests" />
+      <item itemvalue="Gradle.ContactModificationTests" />
+      <item itemvalue="Gradle.ContactCreationTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ContactDataTests" />
+        <item itemvalue="Gradle.ContactCreationTest" />
+        <item itemvalue="Gradle.ContactModificationTests" />
+        <item itemvalue="Gradle.ContactDeletionTests" />
         <item itemvalue="Gradle.RestTests" />
-        <item itemvalue="Gradle.SoapTests" />
-        <item itemvalue="Gradle.GithubTests" />
-        <item itemvalue="Gradle.RestAssuredTests" />
-        <item itemvalue="Gradle.GeoIpServiceTests" />
       </list>
     </recent_temporary>
   </component>
@@ -437,12 +437,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/tests/ContactDeleteFromGroup.java</url>
-          <line>74</line>
+          <line>72</line>
           <option name="timeStamp" value="310" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/tests/ContactDeleteFromGroup.java</url>
-          <line>76</line>
+          <line>74</line>
           <option name="timeStamp" value="311" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -736,6 +736,49 @@
           <line>40</line>
           <option name="timeStamp" value="416" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/tests/ContactDataTests.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="417" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/tests/ContactDataTests.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="418" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/tests/ContactDataTests.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="419" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/tests/ContactDataTests.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="420" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/tests/ContactDataTests.java</url>
+          <line>44</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="421" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/tests/ContactDataTests.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="422" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/tests/ContactDataTests.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="423" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/tests/ContactDataTests.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="424" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/JamesHelper1.java</url>
           <line>98</line>
@@ -775,6 +818,8 @@
         <watch expression="newIssue" language="JAVA" />
         <watch expression="json" />
         <watch expression="json" language="JAVA" />
+        <watch expression="contact" />
+        <watch expression="contact" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
