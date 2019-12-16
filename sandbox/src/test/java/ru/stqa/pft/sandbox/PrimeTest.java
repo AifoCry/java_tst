@@ -7,7 +7,7 @@ public class PrimeTest {
 
     @Test
     public void testPrimesFast() {
-        Assert.assertTrue(Primes.isPrimeFast(Integer.MAX_VALUE));
+        Assert.assertTrue(Primes.isPrimeFast);
     }
 
     @Test (enabled = false)
