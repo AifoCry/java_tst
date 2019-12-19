@@ -1,0 +1,383 @@
+{
+  "b8aeb45bd3ac4ce39c1832b49ea512cd" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6f9c5ffe0c6b9957",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576735774716,
+        "stop" : 1576735776453,
+        "duration" : 1737
+      }
+    } ]
+  },
+  "82195077844cf7d86fd8dbe4907286dc" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "dd40315a2bbbc57",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576735731421,
+        "stop" : 1576735745327,
+        "duration" : 13906
+      }
+    } ]
+  },
+  "c739852e7eb52876d8f8ed85cdcc842" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a678b105c32135c9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576735781466,
+        "stop" : 1576735787713,
+        "duration" : 6247
+      }
+    } ]
+  },
+  "ebfbe510404a7d11e8561252c6bee4f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e67b59d9cc55a7be",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576735761314,
+        "stop" : 1576735769059,
+        "duration" : 7745
+      }
+    } ]
+  },
+  "7c4d9383b7033affc44304a91d2a522" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "81acbc343cc6cd24",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576735745756,
+        "stop" : 1576735753544,
+        "duration" : 7788
+      }
+    } ]
+  },
+  "3958628edd2b32d1fed2da1483e6709" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f7bf4bed6b1b7647",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576741398836,
+        "stop" : 1576741406459,
+        "duration" : 7623
+      }
+    } ]
+  },
+  "b502aa9943fe6bee84e5dd5be2a3b6df" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6b6e4bc7c439ff50",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576735780365,
+        "stop" : 1576735781399,
+        "duration" : 1034
+      }
+    } ]
+  },
+  "2a924882ec39003f3394c63d21b54611" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "679dd463c6dfa780",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576735753607,
+        "stop" : 1576735761271,
+        "duration" : 7664
+      }
+    } ]
+  },
+  "a4ab7155780053574631e678ae6ae0a1" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a1d250ab724bf754",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: \nExpected: <[ContactData{name='Alex 2', surname='Family 2', homePhone='', mobilePhone='888 2', workPhone='', mail1='@mail2', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alex 0', surname='Family 0', homePhone='', mobilePhone='888 0', workPhone='', mail1='@mail0', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alex 0', surname='Family 0', homePhone='', mobilePhone='888 0', workPhone='', mail1='@mail0', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alex 2', surname='Family 2', homePhone='', mobilePhone='888 2', workPhone='', mail1='@mail2', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alex 2', surname='Family 2', homePhone='', mobilePhone='888 2', workPhone='', mail1='@mail2', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alex 1', surname='Family 1', homePhone='', mobilePhone='888 1', workPhone='', mail1='@mail1', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alex 1', surname='Family 1', homePhone='', mobilePhone='888 1', workPhone='', mail1='@mail1', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alex 2', surname='Family 2', homePhone='', mobilePhone='888 2', workPhone='', mail1='@mail2', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alex 0', surname='Family 0', homePhone='', mobilePhone='888 0', workPhone='', mail1='@mail0', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alex 1', surname='Family 1', homePhone='', mobilePhone='888 1', workPhone='', mail1='@mail1', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alex 0', surname='Family 0', homePhone='', mobilePhone='888 0', workPhone='', mail1='@mail0', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alex 0', surname='Family 0', homePhone='', mobilePhone='888 0', workPhone='', mail1='@mail0', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alex 2', surname='Family 2', homePhone='', mobilePhone='888 2', workPhone='', mail1='@mail2', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alex 0', surname='Family 0', homePhone='', mobilePhone='888 0', workPhone='', mail1='@mail0', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alex 0', surname='Family 0', homePhone='', mobilePhone='888 0', workPhone='', mail1='@mail0', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alex 2', surname='Family 2', homePhone='', mobilePhone='888 2', workPhone='', mail1='@mail2', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alex 2', surname='Family 2', homePhone='', mobilePhone='888 2', workPhone='', mail1='@mail2', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alexandr', surname='Eliseev', homePhone='', mobilePhone='+79167777777', workPhone='', mail1='alex@yandex.ru', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alex 0', surname='Family 0', homePhone='', mobilePhone='888 0', workPhone='', mail1='@mail0', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alex 2', surname='Family 2', homePhone='', mobilePhone='888 2', workPhone='', mail1='@mail2', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alexandr', surname='Eliseev', homePhone='', mobilePhone='+79167777777', workPhone='', mail1='alex@yandex.ru', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alex 1', surname='Family 1', homePhone='', mobilePhone='888 1', workPhone='', mail1='@mail1', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alex 1', surname='Family 1', homePhone='', mobilePhone='888 1', workPhone='', mail1='@mail1', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alex 1', surname='Family 1', homePhone='', mobilePhone='888 1', workPhone='', mail1='@mail1', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alex 2', surname='Family 2', homePhone='', mobilePhone='888 2', workPhone='', mail1='@mail2', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alexandr', surname='Eliseev', homePhone='', mobilePhone='+79167777777', workPhone='', mail1='alex@yandex.ru', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alex 0', surname='Family 0', homePhone='', mobilePhone='888 0', workPhone='', mail1='@mail0', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alex 0', surname='Family 0', homePhone='', mobilePhone='888 0', workPhone='', mail1='@mail0', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alex 2', surname='Family 2', homePhone='', mobilePhone='888 2', workPhone='', mail1='@mail2', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alexandr', surname='Eliseev', homePhone='', mobilePhone='+79167777777', workPhone='', mail1='alex@yandex.ru', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alex 1', surname='Family 1', homePhone='', mobilePhone='888 1', workPhone='', mail1='@mail1', mail2='', mail3='', allPhones='null', allMails='null', address='null'}]>\n     but: was <[ContactData{name='Alex 2', surname='Family 2', homePhone='', mobilePhone='888 2', workPhone='', mail1='@mail2', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alex 0', surname='Family 0', homePhone='', mobilePhone='888 0', workPhone='', mail1='@mail0', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alex 0', surname='Family 0', homePhone='', mobilePhone='888 0', workPhone='', mail1='@mail0', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alex 2', surname='Family 2', homePhone='', mobilePhone='888 2', workPhone='', mail1='@mail2', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alex 2', surname='Family 2', homePhone='', mobilePhone='888 2', workPhone='', mail1='@mail2', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alex 1', surname='Family 1', homePhone='', mobilePhone='888 1', workPhone='', mail1='@mail1', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alex 1', surname='Family 1', homePhone='', mobilePhone='888 1', workPhone='', mail1='@mail1', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alex 2', surname='Family 2', homePhone='', mobilePhone='888 2', workPhone='', mail1='@mail2', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alex 0', surname='Family 0', homePhone='', mobilePhone='888 0', workPhone='', mail1='@mail0', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alex 1', surname='Family 1', homePhone='', mobilePhone='888 1', workPhone='', mail1='@mail1', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alex 0', surname='Family 0', homePhone='', mobilePhone='888 0', workPhone='', mail1='@mail0', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alex 0', surname='Family 0', homePhone='', mobilePhone='888 0', workPhone='', mail1='@mail0', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alex 2', surname='Family 2', homePhone='', mobilePhone='888 2', workPhone='', mail1='@mail2', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alex 0', surname='Family 0', homePhone='', mobilePhone='888 0', workPhone='', mail1='@mail0', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alex 0', surname='Family 0', homePhone='', mobilePhone='888 0', workPhone='', mail1='@mail0', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alex 2', surname='Family 2', homePhone='', mobilePhone='888 2', workPhone='', mail1='@mail2', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alex 2', surname='Family 2', homePhone='', mobilePhone='888 2', workPhone='', mail1='@mail2', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alexandr', surname='Eliseev', homePhone='', mobilePhone='+79167777777', workPhone='', mail1='alex@yandex.ru', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alex 0', surname='Family 0', homePhone='', mobilePhone='888 0', workPhone='', mail1='@mail0', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alex 2', surname='Family 2', homePhone='', mobilePhone='888 2', workPhone='', mail1='@mail2', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alexandr', surname='Eliseev', homePhone='', mobilePhone='+79167777777', workPhone='', mail1='alex@yandex.ru', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alex 1', surname='Family 1', homePhone='', mobilePhone='888 1', workPhone='', mail1='@mail1', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alex 1', surname='Family 1', homePhone='', mobilePhone='888 1', workPhone='', mail1='@mail1', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alexandr', surname='Eliseev', homePhone='', mobilePhone='+79167777777', workPhone='', mail1='alex@yandex.ru', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alex 1', surname='Family 1', homePhone='', mobilePhone='888 1', workPhone='', mail1='@mail1', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alex 2', surname='Family 2', homePhone='', mobilePhone='888 2', workPhone='', mail1='@mail2', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alexandr', surname='Eliseev', homePhone='', mobilePhone='+79167777777', workPhone='', mail1='alex@yandex.ru', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alex 0', surname='Family 0', homePhone='', mobilePhone='888 0', workPhone='', mail1='@mail0', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alex 0', surname='Family 0', homePhone='', mobilePhone='888 0', workPhone='', mail1='@mail0', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alex 2', surname='Family 2', homePhone='', mobilePhone='888 2', workPhone='', mail1='@mail2', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alexandr', surname='Eliseev', homePhone='', mobilePhone='+79167777777', workPhone='', mail1='alex@yandex.ru', mail2='', mail3='', allPhones='null', allMails='null', address='null'}, ContactData{name='Alex 1', surname='Family 1', homePhone='', mobilePhone='888 1', workPhone='', mail1='@mail1', mail2='', mail3='', allPhones='null', allMails='null', address='null'}]>",
+      "time" : {
+        "start" : 1576741369403,
+        "stop" : 1576741383005,
+        "duration" : 13602
+      }
+    } ]
+  },
+  "ad9173d585ce0cc527136e51f9d2b497" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3f84a32443f8f61",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576735773148,
+        "stop" : 1576735774707,
+        "duration" : 1559
+      }
+    } ]
+  },
+  "1cfe39201f347c25b3d44af4a957c678" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d14275b573b52fb0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576735812166,
+        "stop" : 1576735817606,
+        "duration" : 5440
+      }
+    } ]
+  },
+  "e80e244f4072c020e58cb0d6fff97ebd" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4d1b786c95f8ba9a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576735769152,
+        "stop" : 1576735773141,
+        "duration" : 3989
+      }
+    } ]
+  },
+  "15e4d5c3984fbfa9d6ece33b22a49e97" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2eb959f1f4ace907",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576741406573,
+        "stop" : 1576741410504,
+        "duration" : 3931
+      }
+    } ]
+  },
+  "a87c9095dbbae235c332c6cab4770689" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a774f844fe0c1a3e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576735778031,
+        "stop" : 1576735779678,
+        "duration" : 1647
+      }
+    } ]
+  },
+  "ff957ef80e0d6d1a158ccf8916b65c78" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8a47c716128dcf6a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576741391038,
+        "stop" : 1576741398765,
+        "duration" : 7727
+      }
+    } ]
+  },
+  "f2a5f6f8127fc4ddb1535a70ee17e40b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "23a949fd53c92695",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576735776456,
+        "stop" : 1576735778028,
+        "duration" : 1572
+      }
+    } ]
+  },
+  "903732c685bc3a8b120690d2a99d526d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "194bd50bab1807b2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576735794073,
+        "stop" : 1576735794094,
+        "duration" : 21
+      }
+    } ]
+  },
+  "11acf62f7ab45be9c0eb60a478a0abb" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "db9f35cc2b3e24cf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576735779729,
+        "stop" : 1576735780327,
+        "duration" : 598
+      }
+    } ]
+  },
+  "e32a757647f5ba6a4be9d2e502ffd7ff" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "dc6b60c2f30ca884",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576735787790,
+        "stop" : 1576735794070,
+        "duration" : 6280
+      }
+    } ]
+  },
+  "ef7f1dc097edc49508b00093461cca44" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "11845a4af9d92a71",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576741383152,
+        "stop" : 1576741390851,
+        "duration" : 7699
+      }
+    } ]
+  }
+}

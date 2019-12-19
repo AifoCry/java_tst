@@ -1,0 +1,46 @@
+{
+  "uid" : "6b6e4bc7c439ff50",
+  "name" : "testGroupModification",
+  "fullName" : "Suite3.testGroupModification",
+  "historyId" : "b502aa9943fe6bee84e5dd5be2a3b6df",
+  "time" : {
+    "start" : 1576735780365,
+    "stop" : 1576735781399,
+    "duration" : 1034
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Suite3"
+  }, {
+    "name" : "testClass",
+    "value" : "Suite3"
+  }, {
+    "name" : "testMethod",
+    "value" : "testGroupModification"
+  }, {
+    "name" : "package",
+    "value" : "Suite3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6b6e4bc7c439ff50.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,46 @@
+{
+  "uid" : "3f84a32443f8f61",
+  "name" : "testBadCreation",
+  "fullName" : "Suite3.testBadCreation",
+  "historyId" : "ad9173d585ce0cc527136e51f9d2b497",
+  "time" : {
+    "start" : 1576735773148,
+    "stop" : 1576735774707,
+    "duration" : 1559
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Suite3"
+  }, {
+    "name" : "testClass",
+    "value" : "Suite3"
+  }, {
+    "name" : "testMethod",
+    "value" : "testBadCreation"
+  }, {
+    "name" : "package",
+    "value" : "Suite3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3f84a32443f8f61.json",
+  "parameterValues" : [ ]
+}

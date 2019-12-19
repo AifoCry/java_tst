@@ -1,0 +1,201 @@
+[ {
+  "uid" : "6b6e4bc7c439ff50",
+  "name" : "testGroupModification",
+  "time" : {
+    "start" : 1576735780365,
+    "stop" : 1576735781399,
+    "duration" : 1034
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2eb959f1f4ace907",
+  "name" : "testContactDeletion",
+  "time" : {
+    "start" : 1576741406573,
+    "stop" : 1576741410504,
+    "duration" : 3931
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e67b59d9cc55a7be",
+  "name" : "testContactCreation[ContactData{name='Alex 2', surname='Family 2', homePhone='null', mobilePhone='888 2', workPhone='null', mail1='@mail2', mail2='null', mail3='null', allPhones='null', allMails='null', address='null'}]",
+  "time" : {
+    "start" : 1576735761314,
+    "stop" : 1576735769059,
+    "duration" : 7745
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "11845a4af9d92a71",
+  "name" : "testContactCreation[ContactData{name='Alex 0', surname='Family 0', homePhone='null', mobilePhone='888 0', workPhone='null', mail1='@mail0', mail2='null', mail3='null', allPhones='null', allMails='null', address='null'}]",
+  "time" : {
+    "start" : 1576741383152,
+    "stop" : 1576741390851,
+    "duration" : 7699
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "194bd50bab1807b2",
+  "name" : "testDbConnection",
+  "time" : {
+    "start" : 1576735794073,
+    "stop" : 1576735794094,
+    "duration" : 21
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3f84a32443f8f61",
+  "name" : "testBadCreation",
+  "time" : {
+    "start" : 1576735773148,
+    "stop" : 1576735774707,
+    "duration" : 1559
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a678b105c32135c9",
+  "name" : "testContactAddInGroup",
+  "time" : {
+    "start" : 1576735781466,
+    "stop" : 1576735787713,
+    "duration" : 6247
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a1d250ab724bf754",
+  "name" : "testContactModification",
+  "time" : {
+    "start" : 1576741369403,
+    "stop" : 1576741383005,
+    "duration" : 13602
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "81acbc343cc6cd24",
+  "name" : "testContactCreation[ContactData{name='Alex 0', surname='Family 0', homePhone='null', mobilePhone='888 0', workPhone='null', mail1='@mail0', mail2='null', mail3='null', allPhones='null', allMails='null', address='null'}]",
+  "time" : {
+    "start" : 1576735745756,
+    "stop" : 1576735753544,
+    "duration" : 7788
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d14275b573b52fb0",
+  "name" : "testContactData",
+  "time" : {
+    "start" : 1576735812166,
+    "stop" : 1576735817606,
+    "duration" : 5440
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f7bf4bed6b1b7647",
+  "name" : "testContactCreation[ContactData{name='Alex 2', surname='Family 2', homePhone='null', mobilePhone='888 2', workPhone='null', mail1='@mail2', mail2='null', mail3='null', allPhones='null', allMails='null', address='null'}]",
+  "time" : {
+    "start" : 1576741398836,
+    "stop" : 1576741406459,
+    "duration" : 7623
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dd40315a2bbbc57",
+  "name" : "testContactModification",
+  "time" : {
+    "start" : 1576735731421,
+    "stop" : 1576735745327,
+    "duration" : 13906
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "679dd463c6dfa780",
+  "name" : "testContactCreation[ContactData{name='Alex 1', surname='Family 1', homePhone='null', mobilePhone='888 1', workPhone='null', mail1='@mail1', mail2='null', mail3='null', allPhones='null', allMails='null', address='null'}]",
+  "time" : {
+    "start" : 1576735753607,
+    "stop" : 1576735761271,
+    "duration" : 7664
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dc6b60c2f30ca884",
+  "name" : "testContactDeleteFromGroup",
+  "time" : {
+    "start" : 1576735787790,
+    "stop" : 1576735794070,
+    "duration" : 6280
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8a47c716128dcf6a",
+  "name" : "testContactCreation[ContactData{name='Alex 1', surname='Family 1', homePhone='null', mobilePhone='888 1', workPhone='null', mail1='@mail1', mail2='null', mail3='null', allPhones='null', allMails='null', address='null'}]",
+  "time" : {
+    "start" : 1576741391038,
+    "stop" : 1576741398765,
+    "duration" : 7727
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "db9f35cc2b3e24cf",
+  "name" : "testGroupDeletion",
+  "time" : {
+    "start" : 1576735779729,
+    "stop" : 1576735780327,
+    "duration" : 598
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4d1b786c95f8ba9a",
+  "name" : "testContactDeletion",
+  "time" : {
+    "start" : 1576735769152,
+    "stop" : 1576735773141,
+    "duration" : 3989
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a774f844fe0c1a3e",
+  "name" : "testGroupCreation[GroupData{id='2147483647', name='test 2'}]",
+  "time" : {
+    "start" : 1576735778031,
+    "stop" : 1576735779678,
+    "duration" : 1647
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6f9c5ffe0c6b9957",
+  "name" : "testGroupCreation[GroupData{id='2147483647', name='test 0'}]",
+  "time" : {
+    "start" : 1576735774716,
+    "stop" : 1576735776453,
+    "duration" : 1737
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "23a949fd53c92695",
+  "name" : "testGroupCreation[GroupData{id='2147483647', name='test 1'}]",
+  "time" : {
+    "start" : 1576735776456,
+    "stop" : 1576735778028,
+    "duration" : 1572
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

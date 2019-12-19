@@ -1,0 +1,46 @@
+{
+  "uid" : "d14275b573b52fb0",
+  "name" : "testContactData",
+  "fullName" : "Suite3.testContactData",
+  "historyId" : "1cfe39201f347c25b3d44af4a957c678",
+  "time" : {
+    "start" : 1576735812166,
+    "stop" : 1576735817606,
+    "duration" : 5440
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Suite3"
+  }, {
+    "name" : "testClass",
+    "value" : "Suite3"
+  }, {
+    "name" : "testMethod",
+    "value" : "testContactData"
+  }, {
+    "name" : "package",
+    "value" : "Suite3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d14275b573b52fb0.json",
+  "parameterValues" : [ ]
+}

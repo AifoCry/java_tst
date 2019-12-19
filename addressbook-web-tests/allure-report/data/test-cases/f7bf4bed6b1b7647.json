@@ -1,0 +1,46 @@
+{
+  "uid" : "f7bf4bed6b1b7647",
+  "name" : "testContactCreation[ContactData{name='Alex 2', surname='Family 2', homePhone='null', mobilePhone='888 2', workPhone='null', mail1='@mail2', mail2='null', mail3='null', allPhones='null', allMails='null', address='null'}]",
+  "fullName" : "Suite1.testContactCreation[ContactData{name='Alex 2', surname='Family 2', homePhone='null', mobilePhone='888 2', workPhone='null', mail1='@mail2', mail2='null', mail3='null', allPhones='null', allMails='null', address='null'}]",
+  "historyId" : "3958628edd2b32d1fed2da1483e6709",
+  "time" : {
+    "start" : 1576741398836,
+    "stop" : 1576741406459,
+    "duration" : 7623
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Suite1"
+  }, {
+    "name" : "testClass",
+    "value" : "Suite1"
+  }, {
+    "name" : "testMethod",
+    "value" : "testContactCreation[ContactData{name='Alex 2', surname='Family 2', homePhone='null', mobilePhone='888 2', workPhone='null', mail1='@mail2', mail2='null', mail3='null', allPhones='null', allMails='null', address='null'}]"
+  }, {
+    "name" : "package",
+    "value" : "Suite1"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f7bf4bed6b1b7647.json",
+  "parameterValues" : [ ]
+}

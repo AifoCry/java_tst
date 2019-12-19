@@ -1,0 +1,46 @@
+{
+  "uid" : "a678b105c32135c9",
+  "name" : "testContactAddInGroup",
+  "fullName" : "Suite3.testContactAddInGroup",
+  "historyId" : "c739852e7eb52876d8f8ed85cdcc842",
+  "time" : {
+    "start" : 1576735781466,
+    "stop" : 1576735787713,
+    "duration" : 6247
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Suite3"
+  }, {
+    "name" : "testClass",
+    "value" : "Suite3"
+  }, {
+    "name" : "testMethod",
+    "value" : "testContactAddInGroup"
+  }, {
+    "name" : "package",
+    "value" : "Suite3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a678b105c32135c9.json",
+  "parameterValues" : [ ]
+}

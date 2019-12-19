@@ -1,0 +1,46 @@
+{
+  "uid" : "194bd50bab1807b2",
+  "name" : "testDbConnection",
+  "fullName" : "Suite3.testDbConnection",
+  "historyId" : "903732c685bc3a8b120690d2a99d526d",
+  "time" : {
+    "start" : 1576735794073,
+    "stop" : 1576735794094,
+    "duration" : 21
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Suite3"
+  }, {
+    "name" : "testClass",
+    "value" : "Suite3"
+  }, {
+    "name" : "testMethod",
+    "value" : "testDbConnection"
+  }, {
+    "name" : "package",
+    "value" : "Suite3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "194bd50bab1807b2.json",
+  "parameterValues" : [ ]
+}

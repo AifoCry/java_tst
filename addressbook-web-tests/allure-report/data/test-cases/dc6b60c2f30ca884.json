@@ -1,0 +1,46 @@
+{
+  "uid" : "dc6b60c2f30ca884",
+  "name" : "testContactDeleteFromGroup",
+  "fullName" : "Suite3.testContactDeleteFromGroup",
+  "historyId" : "e32a757647f5ba6a4be9d2e502ffd7ff",
+  "time" : {
+    "start" : 1576735787790,
+    "stop" : 1576735794070,
+    "duration" : 6280
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Suite3"
+  }, {
+    "name" : "testClass",
+    "value" : "Suite3"
+  }, {
+    "name" : "testMethod",
+    "value" : "testContactDeleteFromGroup"
+  }, {
+    "name" : "package",
+    "value" : "Suite3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "dc6b60c2f30ca884.json",
+  "parameterValues" : [ ]
+}
